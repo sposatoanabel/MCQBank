@@ -1,0 +1,27 @@
+{
+  "name": "mcqBank",
+  "authors": [
+    "Anabel Sposato <sposatoanabel@gmail.com>"
+  ],
+  "description": "front-end development bootstrap",
+  "main": "index.html",
+  "keywords": [
+    "bootstrap",
+    "mcqBank"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootswatch": "^3.3.7",
+    "paper": "^0.11.4"
+  }
+}
