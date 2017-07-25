@@ -1,0 +1,97 @@
+.navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid #EEEEEE;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#bottomNav {
+    border-top: 1px solid #EEEEEE;
+    background-color: #ffffff;
+}
+
+#topNav .nav>li>a{
+    padding: 20px 15px;
+}
+
+.navbar-brand{
+    padding: 5px;
+}
+
+
+.navbar-fixed-top, .navbar-fixed-bottom{
+    z-index: 999;
+}
+
+.navbar .container .navbar-header{
+    background-color: white;
+}
+
+
+.navbar-brand>img{
+    margin-top: 6px;
+}
+
+
+#btnLogIn{
+     display: none;
+ }
+
+#myAccountDropdown {
+    display: none;
+}
+
+
+@media screen and (max-width: 992px) {
+
+
+    .navbar .container>.navbar-collapse{
+        background-color: #ffffff;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+ #bottomNav{
+        top:0;
+    }
+
+
+  #topNav{
+      display: none;
+  }
+
+
+    .navbar .container ul {
+        margin: 127px 0 0 0;
+        padding: 0px 23px;
+        width: 100%;
+    }
+
+    .btn{
+        display: block;
+        width: 100%;
+    }
+
+    #btnLogIn{
+        display: block;
+    }
+
+    #myAccount {
+    display: none;
+    }
+
+    #myAccountDropdown {
+        display: block;
+    }
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
