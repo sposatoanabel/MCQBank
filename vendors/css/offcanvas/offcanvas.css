@@ -19,7 +19,7 @@ body.slide-active {
 
 
 /* put toggle bars on the left :: not using button */
-#slide-nav .navbar-toggle {
+#bottomNav .navbar-toggle {
     cursor: pointer;
     position: relative;
     line-height: 0;
@@ -32,13 +32,13 @@ body.slide-active {
     background: transparent;
 }
 /* icon bar prettyup - optional */
-#slide-nav .navbar-toggle > .icon-bar {
+#bottomNav .navbar-toggle > .icon-bar {
     width: 100%;
     display: block;
     height: 3px;
     margin: 5px 0 0 0;
 }
-#slide-nav .navbar-toggle.slide-active .icon-bar {
+#bottomNav .navbar-toggle.slide-active .icon-bar {
     background: orange
 }
 .navbar-header {
@@ -50,22 +50,22 @@ body.slide-active {
 }
 /* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
 @media (max-width:767px) {
-    #slide-nav .container {
+    #bottomNav .container {
         margin: 0!important;
         padding: 0!important;
         height:100%;
     }
-    #slide-nav .navbar-header {
+    #bottomNav .navbar-header {
         margin: 0 auto;
         padding: 0 15px;
     }
-    #slide-nav .navbar.slide-active {
+    #bottomNav .navbar.slide-active {
         position: absolute;
         width: 80%;
         top: -1px;
         z-index: 1000;
     }
-    #slide-nav #slidemenu {
+    #bottomNav #slidemenu {
         background: #f7f7f7;
         left: -100%;
         width: 80%;
@@ -77,25 +77,26 @@ body.slide-active {
         margin: 0;
         margin-top: 70px;
     }
-    #slide-nav #slidemenu .navbar-nav {
+    #bottomNav #slidemenu .navbar-nav {
         min-width: 0;
         width: 100%;
         margin: 0;
     }
-    #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+    #bottomNav #slidemenu .navbar-nav .dropdown-menu li a {
         min-width: 0;
         width: 80%;
         white-space: normal;
     }
-    #slide-nav {
+    #bottomNav {
         border-top: 0
     }
-    #slide-nav.navbar-inverse #slidemenu {
+    #bottomNav.navbar-inverse #slidemenu {
         background: #333
     }
     /* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
     #navbar-height-col {
         position: fixed;
+        z-index: 100;
         top: 0;
         height: 100%;
         bottom:0;
@@ -108,17 +109,17 @@ body.slide-active {
         z-index: 1;
         border: 0;
     }
-    #slide-nav .navbar-form {
+    #bottomNav .navbar-form {
         width: 100%;
         margin: 8px 0;
         text-align: center;
         overflow: hidden;
         /*fast clearfixer*/
     }
-    #slide-nav .navbar-form .form-control {
+    #bottomNav .navbar-form .form-control {
         text-align: center
     }
-    #slide-nav .navbar-form .btn {
+    #bottomNav .navbar-form .btn {
         width: 100%
     }
 }
