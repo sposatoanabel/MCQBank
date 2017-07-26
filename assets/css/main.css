@@ -6,7 +6,6 @@
 }
 
 #bottomNav {
-    border-top: 1px solid #EEEEEE;
     background-color: #ffffff;
 }
 
@@ -36,6 +35,12 @@
 
 #myAccountDropdown {
     display: none;
+}
+
+
+.navbar-form{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 992px) {
