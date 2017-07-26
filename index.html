@@ -39,7 +39,9 @@
                     </li>
                 </ul>
             </div>
-        </div><!--/ #topNav-->
+        </div>
+        <!--/ #topNav-->
+
         <nav class="navbar navbar-default" role="navigation" id="bottomNav">
             <div class="container">
                 <div class="navbar-header">
@@ -54,8 +56,6 @@
                     <a class="navbar-brand" href="#"><img src="assets/imgs/mcq_logo.jpg" width="160" height="37" alt=""></a>
                 </div>
                 <div id="slidemenu">
-
-
                     <ul class="nav navbar-nav pull-right">
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#about">Testimonial</a></li>
@@ -82,60 +82,59 @@
                         <li><button id="btnSubscribe" class="btn btn-primary navbar-btn">Subscribe</button></li>
                         <li><button id="btnLogIn" class="btn btn-success navbar-btn">Log in</button></li>
                     </ul>
-
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div id="page-content">
-
-            <div class="container">
-                <h1 class="no-margin-top">Bootstrap starter template</h1>
-                <p class="lead">Use this document as a way to quickly start any new project. All you get is this text
-                    and a mostly barebones HTML document.</p>
-
-                <p class="lead">Use this document as a way to quickly start any new project. All you get is this text
-                    and a mostly barebones HTML document.</p>
-
-
-                <p class="lead">Use this document as a way to quickly start any new project. All you get is this text
-                    and a mostly barebones HTML document.</p>
-
-
-                <p class="lead">Use this document as a way to quickly start any new project. All you get is this text
-                    and a mostly barebones HTML document.</p>
-
-
-                <p class="lead">Use this document as a way to quickly start any new project. All you get is this text
-                    and a mostly barebones HTML document.</p>
-
-
-                <p class="lead">Use this document as a way to quickly start any new project. All you get is this text
-                    and a mostly barebones HTML document.</p>
-
-
-                <p class="lead">Use this document as a way to quickly start any new project. All you get is this text
-                    and a mostly barebones HTML document.</p>
-
-
-                <p class="lead">Use this document as a way to quickly start any new project. All you get is this text
-                    and a mostly barebones HTML document.</p>
-
-
-                <p class="lead">Use this document as a way to quickly start any new project. All you get is this text
-                    and a mostly barebones HTML document.</p>
-
-
-                <p class="lead">Use this document as a way to quickly start any new project. All you get is this text
-                    and a mostly barebones HTML document.</p>
-
-
+        <section id="topMain" class="container">
+            <div class="row">
+                <div class="leftCol col-lg-3 col-md-6 col-sm-12">
+                    <div id="mbrDiv">
+                        <h3>Member Login</h3>
+                        <form action="post" href="#">
+                            <input type="text" id="usrName" placeholder="Username">
+                            <input type="text" id="passWord" placeholder="Password">
+                        </form>
+                        <div id="loginDiv">
+                            <div class="loginForgotPass">
+                                <a href="#">forgot password?</a>
+                            </div>
+                             <button class="btn btn-success">Login</button>
+                        </div>
+                        <!-- / loginDiv-->
+                    </div>
+                    <!-- / mbrDiv -->
+                    <div id="signUp">
+                        <button class="btn-info btn" id="signUpBtn">
+                            Sign Up <span id="signUpSpan" class="glyphicon glyphicon-menu-right"></span>
+                        </button>
+                    </div>
+                    <div id="sample">
+                        <form action="#">
+                            <select name="sample" id="sampleMenu">
+                                <option value="" selected="selected">Take a free sample test</option>
+                                <option value="">GP ST Stage 2</option>
+                                <option value="">GP ST Stage 3</option>
+                                <option value="">PLANB 1</option>
+                                <option value="">SJT for Med Students</option>
+                            </select>
+                        </form>
+                    </div><!-- / -->
+                </div>
+                <!--/ leftCol-->
+                <div class="rightCol col-lg-9 col-md-6 col-sm-12">
+                    <div class="mainBanner">
+                        <img id="bannerLg" src="assets/imgs/banner-desktop.png" width="780" height="470" alt="" class="img-responsive">
+                        <img id="bannerMd" src="assets/imgs/banner-tablet.png" width="362" height="445" alt="" class="img-responsive">
+                        <img id="bannerSm" src="assets/imgs/banner-mobile.png" width="320" height="347" alt="" class="img-responsive">
+                        <h1 id="bannerHeader" class="hidden-xs hidden-sm hidden-md">the experts in MCQS</h1>
+                    </div>
+                </div><!-- / rightCol -->
             </div>
-            <!-- /.container -->
+            <!-- / row -->
+        </section>
 
-        </div>
-        <!-- /#page-content -->
     </main>
     <footer>
 
