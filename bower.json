@@ -22,6 +22,9 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "bootswatch": "^3.3.7",
-    "paper": "^0.11.4"
+    "paper": "^0.11.4",
+    "bootstrap-offcanvas": "^2.4.0",
+    "jquery": "^3.2.1",
+    "mobile": "*"
   }
 }
