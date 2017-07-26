@@ -23,7 +23,7 @@ body.slide-active {
     cursor: pointer;
     position: relative;
     line-height: 0;
-    float: left;
+    float: right;
     margin: 0;
     width: 30px;
     height: 40px;
@@ -66,7 +66,7 @@ body.slide-active {
         z-index: 1000;
     }
     #bottomNav #slidemenu {
-        background: #f7f7f7;
+        background: #ffffff;
         left: -100%;
         width: 80%;
         min-width: 0;
@@ -76,6 +76,7 @@ body.slide-active {
         top: -8px;
         margin: 0;
         margin-top: 70px;
+        opacity: 0.8;
     }
     #bottomNav #slidemenu .navbar-nav {
         min-width: 0;
@@ -102,7 +103,8 @@ body.slide-active {
         bottom:0;
         width: 80%;
         left: -80%;
-        background: #f7f7f7;
+        background: #ffffff;
+        opacity: 0.8;
     }
     #navbar-height-col.inverse {
         background: #333;

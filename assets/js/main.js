@@ -14,5 +14,7 @@ $(window).resize(function () {
 
 $(document).ready(function(){
     $('#bottomNav').affix({offset: {top: 64} });
-    $('.slide-active').affix({offset: {top: 64} });
+    $('#nav-icon1').click(function () {
+        $(this).toggleClass('open');
+    });
 });
