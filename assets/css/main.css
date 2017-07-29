@@ -133,8 +133,8 @@ html, body{
 #bannerHeader {
     color: #ffffff;
     position: relative;
-    bottom: 300px;
-    left: 420px;
+    bottom: 360px;
+    left: 302px;
     font-size: 40px;
     text-transform: capitalize;
 }
@@ -198,7 +198,7 @@ html, body{
     border-radius: 4px;
     background: #ffffff;
     border: solid 1px #d8e8e5;
-    padding: 30px;
+    padding: 20px;
 }
 
 input[type=text]#usrName,
@@ -206,13 +206,14 @@ input[type=text]#passWord{
     background-color: #d8e8e5;
     opacity: 0.75;
     border: 1px solid #d8e8e5;
-    padding: 8px 15px;
+    padding: 18px 15px;
     width: 100%;
     border-radius: 4px;
+    margin-bottom: 20px
 }
 
 input[type=text]#usrName{
-    margin: 7px 0;
+    margin-top: 16px;
 }
 
 
@@ -231,8 +232,9 @@ input[type=text]#usrName{
     display: flex;
     justify-content: space-between;
     width: 98%;
-    margin: 15px auto;
+    margin: 9px auto;
     padding-bottom: 0;
+    margin-top: 0;
 }
 
 
@@ -248,12 +250,12 @@ input[type=text]#usrName{
 #signUp .btn-info{
     background-color: #2fb1c7;
     border: 1px solid #2895a9;
-    -webkit-box-shadow: none;
     box-shadow: none;
-    /* -webkit-transition: all 0.4s; */
     -o-transition: all 0.4s;
-    padding: 12px 80px;
+    padding: 20px 130px;
     width: 100%;
+    margin: 11px 0;
+    font-size: 2rem;
 }
 
 .btnLogin{
@@ -262,22 +264,20 @@ input[type=text]#usrName{
 
 #sample {
     height: 50px;
-
     width: 100%;
+    margin-top: 8px;
 }
 
 #sampleMenu{
-    height: 35px;
+    height: 40px;
     width: 100%;
     outline: none;
     border: solid 1px #d8e8e5;
     border-radius: 4px;
-    padding-left: 15px;
+    padding-left: 15px
 }
 
-select, select.form-control{
 
-}
 
 
 
@@ -299,3 +299,27 @@ select, select.form-control{
     border-right: solid 1px #BFBFBF;
     border-bottom: solid 1px #BFBFBF;
 }
+
+
+#planBox1,
+#planBox2,
+#planBox3,
+#planBox4{
+    border-left: 4px solid;
+}
+
+#planBox1{
+    border-color: #30B2CB;
+}
+#planBox2{
+    border-color: #1F87B9;
+}
+
+#planBox3{
+    border-color: #355C9A;
+}
+
+#planBox4{
+    border-color: #4A4A4A;
+}
+
