@@ -1,8 +1,6 @@
 html, body{
     font-family: 'Open Sans', sans-serif;
     color: #6E7C7C;
-
-
 }
 
 
@@ -124,7 +122,6 @@ html, body{
     display: none;
 }
 
-
 #bannerLg{
     display: block;
 }
@@ -140,6 +137,27 @@ html, body{
     left: 420px;
     font-size: 40px;
     text-transform: capitalize;
+}
+
+
+@media screen and (min-width: 1200px) {
+    #bannerLg{
+        display: block;
+    }
+
+    #bannerL{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    #bannerL{
+        display: block;
+    }
+
+    #bannerLg{
+        display: none;
+    }
 }
 
 
@@ -166,9 +184,103 @@ html, body{
     #bannerSm{
         display: block;
     }
+}
 
+
+
+/*----------------------------------------------------------
+
+                   TOP MAIN SECTION
+
+-----------------------------------------------------------*/
+
+#topMain .leftCol{
+    border-radius: 4px;
+    background: #ffffff;
+    border: solid 1px #d8e8e5;
+    padding: 30px;
+}
+
+input[type=text]#usrName,
+input[type=text]#passWord{
+    background-color: #d8e8e5;
+    opacity: 0.75;
+    border: 1px solid #d8e8e5;
+    padding: 8px 15px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+input[type=text]#usrName{
+    margin: 7px 0;
+}
+
+
+.btn-primary{
+    border: 1px solid #2895a9;
+}
+
+#mbrDiv h3{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+#loginDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin: 15px auto;
+    padding-bottom: 0;
+}
+
+
+#loginDiv .btn-success{
+    background-color: #5cd3b5;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /* -webkit-transition: all 0.4s; */
+    -o-transition: all 0.4s;
 
 }
+
+#signUp .btn-info{
+    background-color: #2fb1c7;
+    border: 1px solid #2895a9;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /* -webkit-transition: all 0.4s; */
+    -o-transition: all 0.4s;
+    padding: 12px 80px;
+    width: 100%;
+}
+
+.btnLogin{
+    width: 45%;
+}
+
+#sample {
+    height: 50px;
+
+    width: 100%;
+}
+
+#sampleMenu{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: solid 1px #d8e8e5;
+    border-radius: 4px;
+    padding-left: 15px;
+}
+
+select, select.form-control{
+
+}
+
+
+
 
 
 /*----------------------------------------------------------
