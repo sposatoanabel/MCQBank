@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <!-- offcanvas-->
     <link rel="stylesheet" href="vendors/css/offcanvas/offcanvas.css"/>
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css"/>
     <!--main css-->
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -58,7 +60,7 @@
                 <div id="slidemenu">
                     <ul class="nav navbar-nav pull-right">
                         <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">Testimonial</a></li>
+                        <li><a href="#">Testimonial</a></li>
                         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b
                                 class="caret"></b></a>
                             <ul class="dropdown-menu">
@@ -79,6 +81,7 @@
                                 <li><a href="#">Multi-Speciality Recruitment</a></li>
                             </ul>
                         </li>
+                        <li><a href="#">About us</a></li>
                         <li>
                             <button id="btnSubscribe" class="btn btn-primary navbar-btn">Subscribe</button>
                         </li>
@@ -102,7 +105,7 @@
                         </form>
                         <div id="loginDiv">
                             <div class="loginForgotPass">
-                                <a href="#">forgot password?</a>
+                                <a href="#">Forgot password?</a>
                             </div>
                             <div class="btnLogin">
                                 <button class="btn btn-lg btn-success pull-right">Log in</button>
@@ -112,7 +115,7 @@
                     </div>
                     <!-- / mbrDiv -->
                     <div id="signUp">
-                        <button class="btn-info btn" id="signUpBtn">
+                        <button class="btn-primary btn" id="signUpBtn">
                             Sign Up <span id="signUpSpan" class="glyphicon glyphicon-menu-right"></span>
                         </button>
                     </div>
@@ -129,17 +132,17 @@
                     </div><!-- / -->
                 </div>
                 <!--/ leftCol-->
-                <div class="rightCol col-lg-8 col-md-8 col-sm-12">
+                <div class="rightCol col-lg-8 col-md-6 col-sm-12">
                     <div class="mainBanner">
                         <img id="bannerLg" src="assets/imgs/banner-desktop.png" width="780" height="470" alt=""
                              class="img-responsive">
-                        <img id="bannerL" src="assets/imgs/banner-455x315.jpg" width="455" height="315" alt=""
+                        <img id="bannerL" src="assets/imgs/gpbanner_461x511.png" width="461"  height="511" alt=""
                              class="img-responsive">
                         <img id="bannerMd" src="assets/imgs/banner-tablet.png" width="362" height="445" alt=""
                              class="img-responsive">
                         <img id="bannerSm" src="assets/imgs/banner-mobile.png" width="320" height="347" alt=""
                              class="img-responsive">
-                        <h1 id="bannerHeader" class="hidden-xs hidden-sm hidden-md">the experts in MCQS</h1>
+                        <h1 id="bannerHeader" class="hidden-xs hidden-sm hidden-md">the experts <span>in MCQS</h1>
                     </div>
                 </div><!-- / rightCol -->
             </div>
@@ -305,8 +308,24 @@
             </div><!--/copyRight-->
             <div id="legal" class="hidden-xs hidden-sm hidden-md col-lg-6">
                 <span><a href="#">Terms & conditions</a></span>
-                <span><a href="#">| privacy policy</a></span>
-                <span><a href="#">| share this page</a></span>
+                <span><a href="#">  | Privacy policy  </a></span>
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-secondary">
+                        Share this page
+                    </button>
+                    <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href=""><span class=""></span></a></li>
+                        <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                        <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                        <li><a href=""><span class="fa fa-google-plus"></span></a></li>
+                        <li><a href=""><span class="fa fa-linkedin"></span></a></li>
+                        <li><a href=""><span class="fa fa-pinterest"></span></a></li>
+                        <li><a href=""><span class="fa fa-tumblr"></span></a></li>
+                    </ul>
+                </div>
             </div><!--/legal-->
         </div>
     </footer>

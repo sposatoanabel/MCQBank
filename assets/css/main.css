@@ -6,20 +6,51 @@ html, body{
 
 p {
     margin: 0 0 23px;
+    line-height: 1.5rem;
+}
+
+h3{
+    color: #4A4A4A;
+    font-weight: 500;
 }
 
 
+.btn-primary{
+    background-color: #2fb1c7;
+    border: 1px solid #2895a9;
+    box-shadow: none;
+}
 
+.btn-primary:hover{
+    background-color: #2fb1c7;
+    border: 1px solid #2895a9;
+    opacity: 0.8;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #fff;
+    background-color: #2fb1c7;
+    border-color: #2895a9;
+}
 
 /*---------------------------
     HEADER
 -----------------------------*/
-
+#bottomNav{
+    border-bottom: 1px solid #EEEEEE;
+    border-top: 1px solid #EEEEEE;
+}
 .navbar {
     margin-bottom: 0;
-    border-bottom: 1px solid #EEEEEE;
+
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+.navbar-default{
+    background-color: #ffffff;
+    border: none;
 }
 
 #topNav .nav > li > a {
@@ -38,9 +69,6 @@ p {
     background-color: white;
 }
 
-.navbar-brand > img {
-    margin-top: 6px;
-}
 
 #btnLogIn {
     display: none;
@@ -62,7 +90,9 @@ p {
 }
 
 
-
+#bannerHeader span{
+    display: block;
+}
 
 
 @media screen and (max-width: 992px) {
@@ -136,15 +166,27 @@ p {
 
 .mainBanner img{
     width: 100%;
+    position: relative;
 }
 
 #bannerHeader {
     color: #ffffff;
-    position: relative;
-    bottom: 360px;
-    left: 302px;
+    position: absolute;
+    bottom: 170px;
+    left: 446px;
     font-size: 40px;
     text-transform: capitalize;
+    line-height: 3.5rem;
+}
+
+#signUpBtn span:before{
+    border-left: 2px solid #ffffff;
+    padding: 25px;
+    margin-left: 70px;
+}
+
+#bottomMain{
+    margin-top: 25px;
 }
 
 
@@ -259,10 +301,7 @@ input[type=text]#usrName{
 
 }
 
-#signUp .btn-info{
-    background-color: #2fb1c7;
-    border: 1px solid #2895a9;
-    box-shadow: none;
+#signUp .btn-primary{
     -o-transition: all 0.4s;
     padding: 20px 130px;
     width: 100%;
@@ -365,7 +404,7 @@ input[type=text]#usrName{
     border-bottom: 3px solid;
     padding-bottom: 14px;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -425,13 +464,35 @@ input[type=text]#usrName{
     color: #30B2CB;
 }
 
+@media (max-width: 1199px){
+    #bottomMain .planBox {
+        width: 48%;
+        margin: 9px !important;
+        height: 200px;
+        padding: 16px;
+    }
+
+    #topMain .leftCol{
+        padding: 44px
+    }
+
+    .more{
+        display: block;
+    }
+
+    .less{
+        display: none;
+    }
+}
+
+
+
 #introContent h3{
-    color: #4A4A4A;
-    font-weight: 500;
     margin-top: 7px;
     margin-bottom: 0;
 
 }
+
 
 
 
@@ -545,6 +606,7 @@ footer{
     background-color: #EEEEEE;
     padding: 25px 0;
     color: #4A4A4A;
+    margin-top: 18px;
 }
 
 #copyrightSpan{
@@ -559,7 +621,36 @@ footer{
     color: #4A4A4A;
 }
 
-#legal a:hover{
+#legal a:hover, #legal a:visited, #legal a:active {
     text-decoration: none;
     opacity: 0.8;
 }
+
+#footerDiv{
+    font-size: 0.9rem;
+}
+
+#legal .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle){
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #30b2cb;
+    border: #c1c1c1 solid 1px;
+    background: none;
+    font-size: 0.8rem;
+    padding: 7px;
+}
+
+
+#legal .btn-group>.btn+.dropdown-toggle {
+    padding-right: 8px;
+    padding-left: 8px;
+    background: #eeeeee;
+    color: #30b2cb;
+    font-size: 14px;
+    border: #c1c1c1 solid 1px;
+}
+
+#legal .btn-group{
+    padding-left: 29px;
+}
+
