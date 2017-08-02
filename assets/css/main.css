@@ -1,7 +1,13 @@
 html, body{
     font-family: 'Open Sans', sans-serif;
     color: #6E7C7C;
+    font-size: 16px;
 }
+
+p {
+    margin: 0 0 23px;
+}
+
 
 
 
@@ -54,6 +60,8 @@ html, body{
     background-color: #ffffff;
     z-index: 500;
 }
+
+
 
 
 
@@ -194,11 +202,15 @@ html, body{
 
 -----------------------------------------------------------*/
 
+#topMain{
+    margin-top: 30px;
+}
+
 #topMain .leftCol{
     border-radius: 4px;
     background: #ffffff;
     border: solid 1px #d8e8e5;
-    padding: 20px;
+    padding: 18px;
 }
 
 input[type=text]#usrName,
@@ -255,7 +267,7 @@ input[type=text]#usrName{
     padding: 20px 130px;
     width: 100%;
     margin: 11px 0;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .btnLogin{
@@ -274,7 +286,8 @@ input[type=text]#usrName{
     outline: none;
     border: solid 1px #d8e8e5;
     border-radius: 4px;
-    padding-left: 15px
+    padding-left: 15px;
+    background-color: #ffffff;
 }
 
 
@@ -291,22 +304,71 @@ input[type=text]#usrName{
 
 
 #bottomMain .planBox {
-    height: 150px;
-    color: #5D8CAE;
-    margin: 10px 0;
+    padding: 12px;
+    margin: 15px 0;
     border-radius: 2px;
-    border-top: solid 1px #BFBFBF;
-    border-right: solid 1px #BFBFBF;
-    border-bottom: solid 1px #BFBFBF;
+    border-top: solid 1px #d8e8e5;
+    border-right: solid 1px #d8e8e5;
+    border-bottom: solid 1px #d8e8e5;
 }
+#planBox1 p,
+#planBox2 p,
+#planBox3 p,
+#planBox4 p{
+   font-size: 0.9em;
+    margin: 0 0 10px;
 
+}
 
 #planBox1,
 #planBox2,
 #planBox3,
 #planBox4{
-    border-left: 4px solid;
+    border-left: 20px solid;
+
 }
+
+#planBox1 a,
+#planBox2 a,
+#planBox3 a,
+#planBox4 a{
+    color: #30B2CB;
+    cursor: pointer;
+    text-transform: capitalize;
+
+}
+
+#planBox1 a:hover,#planBox1 a:active,
+#planBox2 a:hover,#planBox2 a:active,
+#planBox3 a:hover,#planBox3 a:active,
+#planBox4 a:hover,#planBox4 a:active{
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+#planBox1 h4,
+#planBox2 h4,
+#planBox3 h4,
+#planBox4 h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+
+}
+
+#planBox1 h4 span{
+    border-color:  #30B2CB ;
+}
+
+.planBox h4 span{
+    padding-top: 10px;
+    border-bottom: 3px solid;
+    padding-bottom: 14px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
 
 #planBox1{
     border-color: #30B2CB;
@@ -320,6 +382,184 @@ input[type=text]#usrName{
 }
 
 #planBox4{
-    border-color: #4A4A4A;
+    border-color: #27406B;
 }
 
+#planBox1 h4{
+    color:#30B2CB;
+}
+
+#planBox2 h4{
+    color:#1F87B9;
+}
+
+#planBox3 h4{
+    color:#355C9A;
+}
+
+#planBox4 h4{
+    color:#27406B;
+}
+
+#bottomMain .leftCol{
+    padding: 0;
+}
+
+#priceDiv.planBox{
+    border: solid 4px #30B2CB;
+}
+
+#priceDiv h4{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4A4A4A;
+    text-transform: capitalize;
+}
+
+#priceDiv p{
+   text-align: center;
+}
+
+#priceDiv #priceP2{
+    font-size: 2rem;
+    color: #30B2CB;
+}
+
+#introContent h3{
+    color: #4A4A4A;
+    font-weight: 500;
+    margin-top: 7px;
+    margin-bottom: 0;
+
+}
+
+
+
+
+#addNews, #addTimer {
+    width: 48%;
+    height: 600px;
+    margin: 0 5px;
+    border: solid 1px #d8e8e5;
+    border-radius: 4px;
+    padding: 0;
+}
+
+.infoImgBg {
+    background-color: rgba(0, 179, 238, .5);
+    height: 174px;
+    position: relative;
+    bottom: 172px;
+    left: 0;
+    z-index: 20;
+    margin-bottom: -211px;
+}
+
+.infoIcon {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20%;
+    position: relative;
+    bottom: 80px;
+    left: 160px;
+    z-index: 30;
+}
+
+.newsDiv {
+    padding: 20px;
+}
+
+.newsDiv h4 {
+    color: #4A4A4A;
+    font-size: 1.2rem;
+    margin-bottom: 38px;
+}
+
+
+.newsDiv a{
+    color: #30B2CB;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+
+.newsDiv a:hover{
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+
+
+.addInfo ul li,
+.addInfo ul li a {
+    color: #2fb1c7;
+    line-height: 1.5em;
+}
+
+
+.addInfo ul li a:hover {
+    color: #2fb1c7;
+    line-height: 1.5em;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+
+.addInfo ul li p {
+    color: #6E7C7C;
+    margin: 5px;
+    font-size: .9em;
+    line-height: 1.3em;
+}
+
+.introDiv{
+    margin-bottom: 10px;
+}
+
+#countdownDiv{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+#remain{
+    text-align: center;
+}
+
+#nextExam{
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+
+/*----------------------------------------------------------
+
+                   FOOTER SECTION
+
+-----------------------------------------------------------*/
+
+footer{
+    background-color: #EEEEEE;
+    padding: 25px 0;
+    color: #4A4A4A;
+}
+
+#copyrightSpan{
+    text-align: left;
+}
+
+#legal{
+    text-align: right;
+}
+
+#legal a{
+    color: #4A4A4A;
+}
+
+#legal a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
