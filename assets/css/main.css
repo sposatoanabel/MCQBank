@@ -1,4 +1,4 @@
-html, body{
+html, body {
     font-family: 'Open Sans', sans-serif;
     color: #6E7C7C;
     font-size: 16px;
@@ -9,19 +9,18 @@ p {
     line-height: 1.5rem;
 }
 
-h3{
+h3 {
     color: #4A4A4A;
     font-weight: 500;
 }
 
-
-.btn-primary{
+.btn-primary {
     background-color: #2fb1c7;
     border: 1px solid #2895a9;
     box-shadow: none;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #2fb1c7;
     border: 1px solid #2895a9;
     opacity: 0.8;
@@ -37,10 +36,11 @@ h3{
 /*---------------------------
     HEADER
 -----------------------------*/
-#bottomNav{
+#bottomNav {
     border-bottom: 1px solid #EEEEEE;
     border-top: 1px solid #EEEEEE;
 }
+
 .navbar {
     margin-bottom: 0;
 
@@ -48,7 +48,7 @@ h3{
     box-shadow: none;
 }
 
-.navbar-default{
+.navbar-default {
     background-color: #ffffff;
     border: none;
 }
@@ -69,7 +69,6 @@ h3{
     background-color: white;
 }
 
-
 #btnLogIn {
     display: none;
 }
@@ -78,8 +77,7 @@ h3{
     display: none;
 }
 
-
-.navbar-form{
+.navbar-form {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -89,11 +87,9 @@ h3{
     z-index: 500;
 }
 
-
-#bannerHeader span{
+#bannerHeader span {
     display: block;
 }
-
 
 @media screen and (max-width: 992px) {
 
@@ -146,9 +142,7 @@ h3{
     padding-top: 70px;
 }
 
-
 /*-------------------- / HEADER ----------------------*/
-
 
 /*----------------------------------------------------------
 
@@ -156,15 +150,15 @@ h3{
 
 -----------------------------------------------------------*/
 
-#bannerMd, #bannerSm{
+#bannerMd, #bannerSm {
     display: none;
 }
 
-#bannerLg{
+#bannerLg {
     display: block;
 }
 
-.mainBanner img{
+.mainBanner img {
     width: 100%;
     position: relative;
 }
@@ -179,64 +173,58 @@ h3{
     line-height: 3.5rem;
 }
 
-#signUpBtn span:before{
+#signUpBtn span:before {
     border-left: 2px solid #ffffff;
     padding: 25px;
     margin-left: 70px;
 }
 
-#bottomMain{
+#bottomMain {
     margin-top: 25px;
 }
 
-
 @media screen and (min-width: 1200px) {
-    #bannerLg{
+    #bannerLg {
         display: block;
     }
 
-    #bannerL{
+    #bannerL {
         display: none;
     }
 }
 
-@media screen and (max-width: 1199px){
-    #bannerL{
+@media screen and (max-width: 1199px) {
+    #bannerL {
         display: block;
     }
 
-    #bannerLg{
+    #bannerLg {
         display: none;
     }
 }
-
 
 @media screen and (max-width: 767px) {
 
-    #bannerMd{
+    #bannerMd {
         display: block;
     }
 
-    #bannerLg, #bannerSm{
+    #bannerLg, #bannerSm {
         display: none;
     }
 
-
 }
-
 
 @media screen and (max-width: 360px) {
 
-    #bannerMd,  #bannerLg {
+    #bannerMd, #bannerLg {
         display: none;
     }
 
-    #bannerSm{
+    #bannerSm {
         display: block;
     }
 }
-
-
 
 /*----------------------------------------------------------
 
@@ -244,11 +232,11 @@ h3{
 
 -----------------------------------------------------------*/
 
-#topMain{
+#topMain {
     margin-top: 30px;
 }
 
-#topMain .leftCol{
+#topMain .leftCol {
     border-radius: 4px;
     background: #ffffff;
     border: solid 1px #d8e8e5;
@@ -256,7 +244,7 @@ h3{
 }
 
 input[type=text]#usrName,
-input[type=text]#passWord{
+input[type=text]#passWord {
     background-color: #d8e8e5;
     opacity: 0.75;
     border: 1px solid #d8e8e5;
@@ -266,23 +254,22 @@ input[type=text]#passWord{
     margin-bottom: 20px
 }
 
-input[type=text]#usrName{
+input[type=text]#usrName {
     margin-top: 16px;
 }
 
-
-.btn-primary{
+.btn-primary {
     border: 1px solid #2895a9;
 }
 
-#mbrDiv h3{
+#mbrDiv h3 {
     font-size: 22px;
     text-align: center;
     font-weight: 600;
     margin-top: 0;
 }
 
-#loginDiv{
+#loginDiv {
     display: flex;
     justify-content: space-between;
     width: 98%;
@@ -291,8 +278,7 @@ input[type=text]#usrName{
     margin-top: 0;
 }
 
-
-#loginDiv .btn-success{
+#loginDiv .btn-success {
     background-color: #5cd3b5;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -301,7 +287,7 @@ input[type=text]#usrName{
 
 }
 
-#signUp .btn-primary{
+#signUp .btn-primary {
     -o-transition: all 0.4s;
     padding: 20px 130px;
     width: 100%;
@@ -309,7 +295,7 @@ input[type=text]#usrName{
     font-size: 1.2rem;
 }
 
-.btnLogin{
+.btnLogin {
     width: 45%;
 }
 
@@ -319,7 +305,7 @@ input[type=text]#usrName{
     margin-top: 8px;
 }
 
-#sampleMenu{
+#sampleMenu {
     height: 40px;
     width: 100%;
     outline: none;
@@ -329,18 +315,11 @@ input[type=text]#usrName{
     background-color: #ffffff;
 }
 
-
-
-
-
-
-
 /*----------------------------------------------------------
 
                    PLANS SECTION
 
 -----------------------------------------------------------*/
-
 
 #bottomMain .planBox {
     padding: 12px;
@@ -350,11 +329,12 @@ input[type=text]#usrName{
     border-right: solid 1px #d8e8e5;
     border-bottom: solid 1px #d8e8e5;
 }
+
 #planBox1 p,
 #planBox2 p,
 #planBox3 p,
-#planBox4 p{
-   font-size: 0.9em;
+#planBox4 p {
+    font-size: 0.9em;
     margin: 0 0 10px;
 
 }
@@ -362,7 +342,7 @@ input[type=text]#usrName{
 #planBox1,
 #planBox2,
 #planBox3,
-#planBox4{
+#planBox4 {
     border-left: 20px solid;
 
 }
@@ -370,21 +350,20 @@ input[type=text]#usrName{
 #planBox1 a,
 #planBox2 a,
 #planBox3 a,
-#planBox4 a{
+#planBox4 a {
     color: #30B2CB;
     cursor: pointer;
     text-transform: capitalize;
 
 }
 
-#planBox1 a:hover,#planBox1 a:active,
-#planBox2 a:hover,#planBox2 a:active,
-#planBox3 a:hover,#planBox3 a:active,
-#planBox4 a:hover,#planBox4 a:active{
+#planBox1 a:hover, #planBox1 a:active,
+#planBox2 a:hover, #planBox2 a:active,
+#planBox3 a:hover, #planBox3 a:active,
+#planBox4 a:hover, #planBox4 a:active {
     text-decoration: none;
     opacity: 0.8;
 }
-
 
 #planBox1 h4,
 #planBox2 h4,
@@ -395,11 +374,11 @@ input[type=text]#usrName{
 
 }
 
-#planBox1 h4 span{
-    border-color:  #30B2CB ;
+#planBox1 h4 span {
+    border-color: #30B2CB;
 }
 
-.planBox h4 span{
+.planBox h4 span {
     padding-top: 10px;
     border-bottom: 3px solid;
     padding-bottom: 14px;
@@ -407,64 +386,85 @@ input[type=text]#usrName{
     font-size: 1.5rem;
 }
 
-
-
-#planBox1{
+#planBox1 {
     border-color: #30B2CB;
 }
-#planBox2{
+
+#planBox2 {
     border-color: #1F87B9;
 }
 
-#planBox3{
+#planBox3 {
     border-color: #355C9A;
 }
 
-#planBox4{
+#planBox4 {
     border-color: #27406B;
 }
 
-#planBox1 h4{
-    color:#30B2CB;
+#planBox1 h4 {
+    color: #30B2CB;
 }
 
-#planBox2 h4{
-    color:#1F87B9;
+#planBox2 h4 {
+    color: #1F87B9;
 }
 
-#planBox3 h4{
-    color:#355C9A;
+#planBox3 h4 {
+    color: #355C9A;
 }
 
-#planBox4 h4{
-    color:#27406B;
+#planBox4 h4 {
+    color: #27406B;
 }
 
-#bottomMain .leftCol{
+#bottomMain .leftCol {
     padding: 0;
 }
 
-#priceDiv.planBox{
+#priceDiv.planBox {
     border: solid 4px #30B2CB;
 }
 
-#priceDiv h4{
+#priceDiv h4 {
     text-align: center;
     font-size: 1.5rem;
     color: #4A4A4A;
     text-transform: capitalize;
 }
 
-#priceDiv p{
-   text-align: center;
+#priceDiv p {
+    text-align: center;
 }
 
-#priceDiv #priceP2{
+#priceDiv #priceP2 {
     font-size: 2rem;
     color: #30B2CB;
 }
 
-@media (max-width: 1199px){
+#addNews, #addTimer {
+    border: solid 1px #d8e8e5;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0 5px;
+}
+
+#nextExam {
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+}
+
+@media (min-width: 1200px) {
+    #addNews, #addTimer {
+        width: 48%;
+        height: 590px;
+
+    }
+
+}
+
+@media (max-width: 1199px) {
     #bottomMain .planBox {
         width: 48%;
         margin: 9px !important;
@@ -472,38 +472,102 @@ input[type=text]#usrName{
         padding: 16px;
     }
 
-    #topMain .leftCol{
-        padding: 44px
+    .addInfo ul li,
+    .addInfo ul li a {
+        color: #2fb1c7;
+        line-height: 1.5em;
+        list-style: none;
     }
 
-    .more{
-        display: block;
+    .addInfo ul li a:hover {
+        color: #2fb1c7;
+        line-height: 1.5em;
+        opacity: 0.8;
+        text-decoration: none;
     }
 
-    .less{
-        display: none;
+    #addNews, #addTimer {
+        width: 48%;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
+
+    #addNews {
+        margin-right: 1.3%;
+    }
+
+    #addTimer {
+        margin-left: 1.3%;
+    }
+
+    #nextExam {
+        margin-top: 40px;
+    }
+
+    .newsDiv h4 {
+        margin-bottom: 29px;
+    }
+
+    .newsDiv ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    .introDiv {
+        margin: 45px 0;
+        padding: 0;
+    }
+
+    #readMoreBtn {
+        color: #2fb1c7;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    #footerDiv {
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px){
+
+
 }
 
 
 
-#introContent h3{
+
+
+
+
+#topMain .leftCol {
+    padding: 44px
+}
+
+.more {
+    display: none;
+}
+
+.basicIcon {
+    display: block;
+    margin: 14px auto 30px auto;
+}
+
+#newsDiv ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.infoImg {
+    height: 140px;
+}
+
+#introContent h3 {
     margin-top: 7px;
     margin-bottom: 0;
 
-}
-
-
-
-
-
-#addNews, #addTimer {
-    width: 48%;
-    height: 600px;
-    margin: 0 5px;
-    border: solid 1px #d8e8e5;
-    border-radius: 4px;
-    padding: 0;
 }
 
 .infoImgBg {
@@ -536,35 +600,16 @@ input[type=text]#usrName{
     margin-bottom: 38px;
 }
 
-
-.newsDiv a{
+.newsDiv a {
     color: #30B2CB;
     cursor: pointer;
     text-transform: capitalize;
 }
 
-
-.newsDiv a:hover{
+.newsDiv a:hover {
     opacity: 0.5;
     text-decoration: none;
 }
-
-
-
-.addInfo ul li,
-.addInfo ul li a {
-    color: #2fb1c7;
-    line-height: 1.5em;
-}
-
-
-.addInfo ul li a:hover {
-    color: #2fb1c7;
-    line-height: 1.5em;
-    opacity: 0.8;
-    text-decoration: none;
-}
-
 
 .addInfo ul li p {
     color: #6E7C7C;
@@ -573,28 +618,20 @@ input[type=text]#usrName{
     line-height: 1.3em;
 }
 
-.introDiv{
+.introDiv {
     margin-bottom: 10px;
 }
 
-#countdownDiv{
+#countdownDiv {
     text-align: center;
     font-size: 4rem;
     font-weight: 500;
     color: #4a4a4a;
 }
 
-#remain{
+#remain {
     text-align: center;
 }
-
-#nextExam{
-    display: block;
-    text-align: center;
-    margin-top: 80px;
-}
-
-
 
 /*----------------------------------------------------------
 
@@ -602,22 +639,22 @@ input[type=text]#usrName{
 
 -----------------------------------------------------------*/
 
-footer{
+footer {
     background-color: #EEEEEE;
     padding: 25px 0;
     color: #4A4A4A;
     margin-top: 18px;
 }
 
-#copyrightSpan{
+#copyrightSpan {
     text-align: left;
 }
 
-#legal{
+#legal {
     text-align: right;
 }
 
-#legal a{
+#legal a {
     color: #4A4A4A;
 }
 
@@ -626,11 +663,11 @@ footer{
     opacity: 0.8;
 }
 
-#footerDiv{
+#footerDiv {
     font-size: 0.9rem;
 }
 
-#legal .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle){
+#legal .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     color: #30b2cb;
@@ -640,8 +677,7 @@ footer{
     padding: 7px;
 }
 
-
-#legal .btn-group>.btn+.dropdown-toggle {
+#legal .btn-group > .btn + .dropdown-toggle {
     padding-right: 8px;
     padding-left: 8px;
     background: #eeeeee;
@@ -650,7 +686,7 @@ footer{
     border: #c1c1c1 solid 1px;
 }
 
-#legal .btn-group{
+#legal .btn-group {
     padding-left: 29px;
 }
 

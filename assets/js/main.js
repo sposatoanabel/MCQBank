@@ -19,4 +19,17 @@ $(document).ready(function(){
     });
 
 
+    $("#readMoreBtn").click(function () {
+
+        var readMoreTextElement = $(this).text();
+        if (readMoreTextElement == "Read More") {
+            $(this).text("Read Less");
+            $("#infoMore").slideDown();
+        } else {
+            $(this).text("Read More");
+            $("#infoMore").slideUp();
+        }
+    });
+
 });
+
