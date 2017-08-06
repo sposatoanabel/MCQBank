@@ -24,10 +24,10 @@ body.slide-active {
     position: relative;
     line-height: 0;
     float: right;
-    margin: 0;
+    margin: 10px 0;
     width: 30px;
     height: 40px;
-    padding: 10px 0 0 0;
+    padding:0;
     border: 0;
     background: transparent;
 }
