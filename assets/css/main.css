@@ -233,7 +233,7 @@ h3 {
 -----------------------------------------------------------*/
 
 #topMain {
-    margin-top: 30px;
+    margin-top: 18px;
 }
 
 #topMain .leftCol {
@@ -289,7 +289,7 @@ input[type=text]#usrName {
 
 #signUp .btn-primary {
     -o-transition: all 0.4s;
-    padding: 20px 130px;
+    padding: 20px 85px;
     width: 100%;
     margin: 11px 0;
     font-size: 1.2rem;
@@ -534,13 +534,20 @@ input[type=text]#usrName {
 @media (max-width: 991px) {
     #bottomMain .planBox {
         width: 100%;
-        margin: 10px 0!important;
+        margin: 20px 0 !important;
         height: 200px;
         padding: 16px;
-
     }
 
-    .rightCol{
+    #signUp .btn-primary {
+        padding: 20px 70px;
+    }
+
+    .introDiv {
+        margin: 0;
+    }
+
+    .rightCol {
         padding-right: 0;
     }
 
@@ -554,33 +561,33 @@ input[type=text]#usrName {
         margin: 20px 0;
 
     }
+
     #bottomMain .leftCol {
-         padding: 15px;
+        padding: 15px;
     }
 
     .rightCol {
-        padding-right:15px;
+        padding-right: 15px;
     }
 
     .navbar-brand {
         padding: 12px 0 12px;
     }
 
-    .navbar-brand>img {
+    .navbar-brand > img {
         display: block;
         width: 126px;
         height: auto;
     }
 
-    .nav>li>a {
-        padding: 10px 10px;
+
+    .nav > li > a {
+        padding: 15px 10px;
     }
 
 }
 
-#topMain .leftCol {
-    padding: 44px
-}
+
 
 .more {
     display: none;
