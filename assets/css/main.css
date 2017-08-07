@@ -232,10 +232,20 @@ h3 {
 @media screen and (max-width: 767px) {
     .loginForgotPass span {
         display: block;
+        padding: 18px 0;
+    }
+
+
+    .btn-group-lg>.btn, .btn-lg{
+        padding: 18px 16px;
     }
 
     #bannerMd {
         display: block;
+    }
+
+    #loginDiv{
+        margin: 17px auto;
     }
 
 
@@ -317,6 +327,24 @@ input[type=text]#usrName {
     margin: 9px auto;
     padding-bottom: 0;
     margin-top: 0;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    #loginDiv{
+        margin: 0 auto 17px auto;
+    }
+    #sample{
+        margin-top: 33px;
+    }
+
+    #topMain{
+        margin-top: 0;
+    }
+
+
+
 }
 
 #loginDiv .btn-success {
@@ -646,6 +674,10 @@ input[type=text]#usrName {
         padding: 40px;
         margin: 0 15px;
     }
+
+    #bottomMain .row{
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 460px){
@@ -667,12 +699,17 @@ input[type=text]#usrName {
         margin-top: 0;
     }
 
-    #addNews, #addTimer{
-        border:none;
+    .rightCol{
+        padding: 0;
     }
 
-    .basicIcon{
-        display: none;
+
+    footer{
+        margin-top: 128px;
+    }
+
+    .clear{
+        clear: both;
     }
 }
 
