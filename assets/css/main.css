@@ -238,7 +238,9 @@ h3 {
         display: block;
     }
 
-    #bannerLg, #bannerSm {
+
+
+    #bannerLg, #bannerSm, #bannerMd2 {
         display: none;
     }
 
@@ -247,7 +249,8 @@ h3 {
 
 @media screen and (max-width: 360px) {
 
-    #bannerMd, #bannerLg {
+
+    #bannerMd, #bannerLg, #bannerMd2 {
         display: none;
     }
 
@@ -634,6 +637,10 @@ input[type=text]#usrName {
 
 }
 
+.basicIcon {
+    display: block;
+    margin: 14px auto 30px auto;
+}
 @media (max-width: 767px) {
     #topMain .leftCol {
         padding: 40px;
@@ -641,14 +648,39 @@ input[type=text]#usrName {
     }
 }
 
-.more {
+@media (max-width: 460px){
+    #topMain .leftCol {
+        padding: 24px;
+        margin: 35px 15px;
+    }
+
+    .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .container{
+        padding:0;
+    }
+
+    #topMain {
+        margin-top: 0;
+    }
+
+    #addNews, #addTimer{
+        border:none;
+    }
+
+    .basicIcon{
+        display: none;
+    }
+}
+
+    .more {
     display: none;
 }
 
-.basicIcon {
-    display: block;
-    margin: 14px auto 30px auto;
-}
+
 
 #newsDiv ul {
     padding-left: 0;
