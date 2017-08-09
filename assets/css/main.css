@@ -1,3 +1,9 @@
+/*############################################
+
+                    GENERAL
+
+#############################################*/
+
 html, body {
     font-family: 'Open Sans', sans-serif;
     color: #6E7C7C;
@@ -9,10 +15,17 @@ p {
     line-height: 1.5rem;
 }
 
+
+/* ---------------------TITLES---------------------- */
+
 h3 {
     color: #4A4A4A;
     font-weight: 500;
 }
+
+
+/* ---------------------BUTTONS---------------------- */
+
 
 .btn-primary {
     background-color: #2fb1c7;
@@ -33,17 +46,33 @@ h3 {
     border-color: #2895a9;
 }
 
-/*---------------------------
-    HEADER
------------------------------*/
-#bottomNav {
-    border-bottom: 1px solid #EEEEEE;
-    border-top: 1px solid #EEEEEE;
+.btn-success {
+    background-color: #5cd3b5;
+    border: 1px solid #4cae4c;
+}
+
+.btn-success:hover{
+    opacity: 0.9;
+    background-color: #5cd3b5;
+}
+
+
+/*############################################
+
+                    HEADER
+
+#############################################*/
+
+
+/* ---------------- TOP NAV ----------------- */
+
+
+#topNav .nav > li > a {
+    padding: 20px 15px;
 }
 
 .navbar {
     margin-bottom: 0;
-
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -53,15 +82,8 @@ h3 {
     border: none;
 }
 
-#topNav .nav > li > a {
-    padding: 20px 15px;
-}
-
-.navbar-brand {
-    padding: 5px;
-}
-
-.navbar-fixed-top, .navbar-fixed-bottom {
+.navbar-fixed-top,
+.navbar-fixed-bottom {
     z-index: 999;
 }
 
@@ -69,78 +91,35 @@ h3 {
     background-color: white;
 }
 
-#btnLogIn {
-    display: none;
+
+#bottomNav {
+    border-bottom: 1px solid #EEEEEE;
+    border-top: 1px solid #EEEEEE;
+    text-transform: uppercase;
 }
 
-#myAccountDropdown {
-    display: none;
-}
 
-.navbar-form {
-    margin-top: 0;
-    margin-bottom: 0;
-}
+/* --------------------- BOTTOM NAV ---------------------- */
 
 #bottomNav {
     background-color: #ffffff;
     z-index: 500;
 }
 
-#bannerHeader span {
-    display: block;
+/* LOGO */
+
+.navbar-brand {
+    padding: 5px;
 }
 
-@media screen and (max-width: 992px) {
 
-    .navbar .container > .navbar-collapse {
-        background-color: #ffffff;
-    }
-
+#btnLogIn {
+    display: none;
 }
 
-@media screen and (max-width: 767px) {
-    #bottomNav {
-        top: 0;
-        z-index: 999;
-    }
 
-    .loginForgotPass a{
-        display: none;
-    }
-
-    .loginForgotPass span{
-        display: block;
-    }
-
-
-
-    #topNav {
-        display: none;
-    }
-
-    .navbar .container ul {
-        margin: 127px 0 0 0;
-        padding: 0px 23px;
-        width: 100%;
-    }
-
-    .btn {
-        display: block;
-        width: 100%;
-    }
-
-    #btnLogIn {
-        display: block;
-    }
-
-    #myAccount {
-        display: none;
-    }
-
-    #myAccountDropdown {
-        display: block;
-    }
+#myAccountDropdown {
+    display: none;
 }
 
 .affix {
@@ -152,136 +131,23 @@ h3 {
     padding-top: 70px;
 }
 
-/*-------------------- / HEADER ----------------------*/
 
-/*----------------------------------------------------------
+/*############################################
 
-                    SIGN UP SECTION
+                   MAIN
 
------------------------------------------------------------*/
-
-.loginForgotPass span{
-    display: none;
-}
+#############################################*/
 
 
-#bannerMd, #bannerMd2, #bannerSm {
-    display: none;
-}
+/*---------------------------------------------
 
-#bannerLg {
-    display: block;
-}
+              TOP MAIN SECTION
 
-.mainBanner img {
-    width: 100%;
-    position: relative;
-}
-
-#bannerHeader {
-    color: #ffffff;
-    position: absolute;
-    bottom: 170px;
-    left: 446px;
-    font-size: 40px;
-    text-transform: capitalize;
-    line-height: 3.5rem;
-}
-
-#signUpBtn span:before {
-    border-left: 2px solid #ffffff;
-    padding: 25px;
-    width: 30px;
-}
-
-#bottomMain {
-    margin-top: 25px;
-}
-
-@media screen and (min-width: 1200px) {
-    #bannerLg {
-        display: block;
-    }
-
-    #bannerL {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 1199px) {
-    #bannerL {
-        display: block;
-    }
-
-    #bannerLg {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    #bannerL {
-        display: none;
-    }
-
-    #bannerMd2 {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .loginForgotPass span {
-        display: block;
-        padding: 18px 0;
-    }
-
-
-    .btn-group-lg>.btn, .btn-lg{
-        padding: 18px 16px;
-    }
-
-    #bannerMd {
-        display: block;
-    }
-
-    #loginDiv{
-        margin: 17px auto;
-    }
+----------------------------------------------*/
 
 
 
-    #bannerLg, #bannerSm, #bannerMd2 {
-        display: none;
-    }
-
-
-}
-
-@media screen and (max-width: 360px) {
-
-
-    #bannerMd, #bannerLg, #bannerMd2 {
-        display: none;
-    }
-
-    #bannerSm {
-        display: block;
-    }
-}
-
-/*----------------------------------------------------------
-
-                   TOP MAIN SECTION
-
------------------------------------------------------------*/
-#signUpTextSpan {
-    text-align: center;
-}
-
-#signUpSpan {
-    width: 30px;
-    float: right;
-}
+/*-------------------Left Col ----------------*/
 
 #topMain {
     margin-top: 30px;
@@ -292,6 +158,13 @@ h3 {
     background: #ffffff;
     border: solid 1px #d8e8e5;
     padding: 18px;
+}
+
+#mbrDiv h3 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0;
 }
 
 input[type=text]#usrName,
@@ -309,43 +182,14 @@ input[type=text]#usrName {
     margin-top: 16px;
 }
 
-.btn-primary {
-    border: 1px solid #2895a9;
-}
-
-#mbrDiv h3 {
-    font-size: 22px;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 0;
-}
-
 #loginDiv {
     display: flex;
     justify-content: space-between;
     width: 98%;
-    margin: 9px auto;
+    margin: 0 auto 9px auto;
     padding-bottom: 0;
-    margin-top: 0;
 }
 
-
-@media screen and (max-width: 767px) {
-
-    #loginDiv{
-        margin: 0 auto 17px auto;
-    }
-    #sample{
-        margin-top: 33px;
-    }
-
-    #topMain{
-        margin-top: 0;
-    }
-
-
-
-}
 
 #loginDiv .btn-success {
     background-color: #5cd3b5;
@@ -356,6 +200,31 @@ input[type=text]#usrName {
 
 }
 
+.btnLogin {
+    width: 45%;
+}
+
+.btnLogin a{
+    display: none;
+}
+
+.loginForgotPass span {
+    display: none;
+}
+
+#signUpTextSpan {
+    text-align: center;
+}
+
+#signUpSpan {
+    width: 30px;
+    float: right;
+}
+
+.btn-primary {
+    border: 1px solid #2895a9;
+}
+
 #signUp .btn-primary {
     -o-transition: all 0.4s;
     padding: 20px 45px;
@@ -364,9 +233,12 @@ input[type=text]#usrName {
     font-size: 1.2rem;
 }
 
-.btnLogin {
-    width: 45%;
+#signUpBtn span:before {
+    border-left: 2px solid #ffffff;
+    padding: 25px;
+    width: 30px;
 }
+
 
 #sample {
     height: 50px;
@@ -384,11 +256,68 @@ input[type=text]#usrName {
     background-color: #ffffff;
 }
 
+
+
+/*-------------------Right Col ----------------*/
+
+
+#bannerHeader {
+    color: #ffffff;
+    position: absolute;
+    bottom: 170px;
+    left: 446px;
+    font-size: 40px;
+    text-transform: capitalize;
+    line-height: 3.5rem;
+}
+
+.mainBanner img {
+    width: 100%;
+    position: relative;
+}
+
+#bannerHeader span {
+    display: block;
+}
+
+#bannerMd, #bannerMd2, #bannerSm {
+    display: none;
+}
+
+#bannerLg {
+    display: block;
+}
+
+
 /*----------------------------------------------------------
 
-                   PLANS SECTION
+                   BOTTOM MAIN SECTION
 
 -----------------------------------------------------------*/
+
+
+/*-------------------Left Col ----------------*/
+
+
+#bottomMain {
+    margin-top: 25px;
+}
+
+#bottomMain .leftCol a{
+    color: #30B2CB;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#bottomMain .leftCol h4{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+#bottomMain .leftCol a:hover, #bottomMain .leftCol a:active {
+    text-decoration: none;
+    opacity: 0.8;
+}
 
 #bottomMain .planBox {
     padding: 12px;
@@ -405,7 +334,6 @@ input[type=text]#usrName {
 #planBox4 p {
     font-size: 0.9em;
     margin: 0 0 10px;
-
 }
 
 #planBox1,
@@ -416,36 +344,6 @@ input[type=text]#usrName {
 
 }
 
-#planBox1 a,
-#planBox2 a,
-#planBox3 a,
-#planBox4 a {
-    color: #30B2CB;
-    cursor: pointer;
-    text-transform: capitalize;
-
-}
-
-#planBox1 a:hover, #planBox1 a:active,
-#planBox2 a:hover, #planBox2 a:active,
-#planBox3 a:hover, #planBox3 a:active,
-#planBox4 a:hover, #planBox4 a:active {
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-#planBox1 h4,
-#planBox2 h4,
-#planBox3 h4,
-#planBox4 h4 {
-    font-size: 1.5rem;
-    text-transform: capitalize;
-
-}
-
-#planBox1 h4 span {
-    border-color: #30B2CB;
-}
 
 .planBox h4 span {
     padding-top: 10px;
@@ -511,6 +409,20 @@ input[type=text]#usrName {
     color: #30B2CB;
 }
 
+
+/*------------------- Right Col ----------------*/
+
+.introDiv {
+    margin-bottom: 10px;
+}
+
+#introContent h3 {
+    margin-top: 7px;
+    margin-bottom: 0;
+
+}
+
+
 #addNews, #addTimer {
     border: solid 1px #d8e8e5;
     border-radius: 4px;
@@ -518,220 +430,13 @@ input[type=text]#usrName {
     margin: 0 5px;
 }
 
-#nextExam {
-    display: block;
-    text-align: center;
-    margin-top: 80px;
-}
-
-@media (min-width: 1200px) {
-    #addNews, #addTimer {
-        width: 48%;
-        height: 590px;
-
-    }
-
-}
-
-@media (max-width: 1199px) {
-    #bottomMain .planBox {
-        width: 48%;
-        margin: 9px !important;
-        height: 200px;
-        padding: 16px;
-    }
-
-    .addInfo ul li,
-    .addInfo ul li a {
-        color: #2fb1c7;
-        line-height: 1.5em;
-        list-style: none;
-    }
-
-    .addInfo ul li a:hover {
-        color: #2fb1c7;
-        line-height: 1.5em;
-        opacity: 0.8;
-        text-decoration: none;
-    }
-
-    #addNews, #addTimer {
-        width: 48%;
-        height: 400px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    #addNews {
-        margin-right: 1.3%;
-    }
-
-    #addTimer {
-        margin-left: 1.3%;
-    }
-
-    #nextExam {
-        margin-top: 40px;
-    }
-
-    .newsDiv h4 {
-        margin-bottom: 29px;
-    }
-
-    .newsDiv ul {
-        padding: 0;
-        text-align: center;
-    }
-
-    .introDiv {
-        margin: 45px 0;
-        padding: 0;
-    }
-
-    #readMoreBtn {
-        color: #2fb1c7;
-        background: none;
-        border: none;
-        padding: 0;
-    }
-
-    #footerDiv {
-        text-align: center;
-    }
-
-    #topMain .leftCol {
-        padding: 24px;
-    }
-}
-
-@media (max-width: 991px) {
-
-    #bottomMain {
-        margin-top: 0;
-        padding-left: 0;
-    }
-
-    #bottomMain .planBox {
-        width: 100%;
-        margin: 20px 0 !important;
-        height: 200px;
-        padding: 16px;
-    }
-
-    #signUp .btn-primary {
-        padding: 20px 45px;
-    }
-
-    .introDiv {
-        margin: 0;
-    }
-
-    .rightCol {
-        padding-right: 0;
-    }
-
-    #topMain .leftCol {
-        padding: 16px;
-        margin-left: 0;
-    }
-
-    #addNews, #addTimer {
-        width: 100%;
-        margin: 20px 0;
-
-    }
-
-    #bottomMain .leftCol {
-        padding: 15px;
-    }
-
-    .rightCol {
-        padding-right: 15px;
-    }
-
-    .navbar-brand {
-        padding: 12px 0 12px;
-    }
-
-    .navbar-brand > img {
-        display: block;
-        width: 126px;
-        height: auto;
-    }
-
-    .nav > li > a {
-        padding: 15px 10px;
-    }
-
-}
+.infoImg {
+     height: 140px;
+ }
 
 .basicIcon {
     display: block;
     margin: 14px auto 30px auto;
-}
-@media (max-width: 767px) {
-    #topMain .leftCol {
-        padding: 40px;
-        margin: 0 15px;
-    }
-
-    #bottomMain .row{
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 460px){
-    #topMain .leftCol {
-        padding: 24px;
-        margin: 35px 15px;
-    }
-
-    .row{
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .container{
-        padding:0;
-    }
-
-    #topMain {
-        margin-top: 0;
-    }
-
-    .rightCol{
-        padding: 0;
-    }
-
-
-    footer{
-        margin-top: 128px;
-    }
-
-    .clear{
-        clear: both;
-    }
-}
-
-    .more {
-    display: none;
-}
-
-
-
-#newsDiv ul {
-    padding-left: 0;
-    list-style: none;
-}
-
-.infoImg {
-    height: 140px;
-}
-
-#introContent h3 {
-    margin-top: 7px;
-    margin-bottom: 0;
-
 }
 
 .infoImgBg {
@@ -754,6 +459,16 @@ input[type=text]#usrName {
     z-index: 30;
 }
 
+.addInfo a{
+    color: #30B2CB;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.addInfo a:hover{
+    opacity: 0.5;
+    text-decoration: none;
+}
 .newsDiv {
     padding: 20px;
 }
@@ -764,16 +479,16 @@ input[type=text]#usrName {
     margin-bottom: 38px;
 }
 
-.newsDiv a {
-    color: #30B2CB;
-    cursor: pointer;
-    text-transform: capitalize;
+
+.more {
+    display: none;
 }
 
-.newsDiv a:hover {
-    opacity: 0.5;
-    text-decoration: none;
+.newsDiv ul {
+    list-style: disc;
+    color: #30B2CB;
 }
+
 
 .addInfo ul li p {
     color: #6E7C7C;
@@ -782,9 +497,6 @@ input[type=text]#usrName {
     line-height: 1.3em;
 }
 
-.introDiv {
-    margin-bottom: 10px;
-}
 
 #countdownDiv {
     text-align: center;
@@ -793,9 +505,16 @@ input[type=text]#usrName {
     color: #4a4a4a;
 }
 
+#nextExam {
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+}
+
 #remain {
     text-align: center;
 }
+
 
 /*----------------------------------------------------------
 
@@ -853,4 +572,387 @@ footer {
 #legal .btn-group {
     padding-left: 29px;
 }
+
+
+/*----------------------------------------------------------
+
+                   Media queries
+
+-----------------------------------------------------------*/
+
+
+
+@media screen and (min-width: 1200px) {
+
+    /*TOP MAIN RIGHT COL */
+
+    #bannerLg {
+        display: block;
+    }
+
+    #bannerL {
+        display: none;
+    }
+
+    /*BOTTOM MAIN RIGHT COL */
+
+    #addNews, #addTimer {
+        width: 48%;
+        height: 590px;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+    /*TOP MAIN LEFT COL */
+
+    #topMain .leftCol {
+        padding: 24px;
+    }
+
+    /*TOP MAIN RIGHT COL */
+    #bannerL {
+        display: block;
+    }
+
+    #bannerLg {
+        display: none;
+    }
+
+    /*BOTTOM MAIN LEFT COL */
+
+    #bottomMain .planBox {
+        width: 48%;
+        margin: 9px !important;
+        height: 200px;
+        padding: 16px;
+    }
+
+    /*BOTTOM MAIN RIGHT COL */
+
+    .addInfo ul li,
+    .addInfo ul li a {
+        color: #2fb1c7;
+        line-height: 1.5em;
+        list-style: none;
+    }
+
+    .addInfo ul li a:hover {
+        color: #2fb1c7;
+        line-height: 1.5em;
+        opacity: 0.8;
+        text-decoration: none;
+    }
+
+    #addNews, #addTimer {
+        width: 48%;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #addNews {
+        margin-right: 1.3%;
+    }
+
+    #addTimer {
+        margin-left: 1.3%;
+    }
+
+    #nextExam {
+        margin-top: 40px;
+    }
+
+    .newsDiv h4 {
+        margin-bottom: 29px;
+    }
+
+    .newsDiv ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    .introDiv {
+        margin: 45px 0;
+        padding: 0;
+    }
+
+    #readMoreBtn {
+        color: #2fb1c7;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+
+    /* FOOTER */
+
+    #footerDiv {
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 991px) {
+
+    /* HEADER */
+
+    .navbar-brand {
+        padding: 12px 0 12px;
+    }
+
+    .navbar-brand > img {
+        display: block;
+        width: 126px;
+        height: auto;
+    }
+
+    .nav > li > a {
+        padding: 15px 15px;
+        border-bottom: 1px solid #eeeeee;
+        font-size: 0.8rem;
+    }
+
+    .navbar .container > .navbar-collapse {
+        background-color: #ffffff;
+    }
+
+    /*TOP MAIN LEFT COL */
+
+    #topMain .leftCol {
+        padding: 16px;
+        margin-left: 0;
+    }
+
+    /*TOP MAIN RIGHT COL */
+
+    .rightCol {
+        padding-right: 15px;
+        padding-left: 0;
+    }
+
+    #bannerL {
+        display: none;
+    }
+
+    #bannerMd2 {
+        display: block;
+    }
+
+    .mainBanner{
+        padding-left: 15px;
+    }
+
+    /*BOTTOM MAIN LEFT COL */
+
+    #bottomMain {
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    #bottomMain .planBox {
+        width: 100%;
+        margin: 20px 0 !important;
+        height: 200px;
+        padding: 16px;
+    }
+
+    #bottomMain .leftCol {
+        padding: 15px;
+    }
+
+    #signUp .btn-primary {
+        padding: 20px 45px;
+    }
+
+    /*BOTTOM MAIN RIGHT COL */
+
+    .introDiv {
+        margin: 0;
+    }
+
+    #addNews, #addTimer {
+        width: 100%;
+        margin: 20px 0;
+
+    }
+
+    .addInfo .row{
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+    /* HEADER */
+
+    #topNav {
+        display: none;
+    }
+
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #555;
+        background: none;
+        border-color: #eeeeee;
+    }
+
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover{
+        color: #2fb1c7;
+        background-color: white;
+    }
+
+    #bottomNav {
+        top: 0;
+        z-index: 999;
+    }
+
+    .navbar .container ul {
+        margin: 127px 0 0 0;
+        padding: 0 23px;
+        width: 100%;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+    }
+
+    #btnSubscribe, #btnLogIn {
+        padding: 10px;
+    }
+
+
+    #topMain {
+        margin-top: 0;
+    }
+
+
+    /* TOP MAIN LEFT COL */
+
+    #topMain .leftCol {
+        padding: 40px;
+        margin: 15px;
+    }
+
+    #btnLogIn {
+        display: block;
+    }
+
+    .loginForgotPass a {
+        display: none;
+    }
+
+    .loginForgotPass span {
+        display: block;
+        padding: 18px 0;
+    }
+
+    #loginDiv {
+        margin: 0 auto 17px auto;;
+     }
+
+    .btnLogin a{
+        display: block;
+        color: #5cd3b5;
+        padding: 18px 0;
+        text-align: right;
+        font-weight: 600;
+    }
+
+    .btnLogin a:hover, .btnLogin a:focus {
+        text-decoration: none;
+        opacity: 0.8;
+    }
+
+    .btnLogin button{
+        display: none;
+    }
+
+    #sample {
+        margin-top: 33px;
+    }
+
+    /* TOP MAIN RIGHT COL */
+
+
+    #topMain .mainBanner img{
+        width: 100%;
+        position: relative;
+        padding-left: 0;
+    }
+
+    #bannerMd {
+        display: block;
+    }
+
+    #bannerLg, #bannerSm, #bannerMd2 {
+         display: none;
+     }
+
+    /* BOTTOM MAIN */
+
+    #bottomMain .row {
+        margin-left: 0;
+    }
+
+
+
+
+
+}
+
+
+@media (max-width: 460px) {
+    #topMain .leftCol {
+        padding: 24px;
+        margin: 35px 15px;
+    }
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    #topMain {
+        margin-top: 0;
+    }
+
+    #topMain .mainBanner img{
+        padding-left: 0;
+    }
+
+    #bottomMain .rightCol{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    #bannerMd, #bannerLg, #bannerMd2 {
+        display: none;
+    }
+
+    #bannerSm {
+        display: block;
+    }
+
+    #topMain .mainBanner img{
+        padding-left: 0;
+    }
+}
+
 
