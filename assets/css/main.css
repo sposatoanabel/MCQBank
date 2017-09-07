@@ -15,8 +15,20 @@ p {
     line-height: 1.5rem;
 }
 
+.breadcrumb{
+    background-color: transparent;
+    text-align: center;
+}
+
 
 /* ---------------------TITLES---------------------- */
+
+
+h1{
+    color: #ffffff;
+    font-size: 48px;
+}
+
 
 h3 {
     color: #4A4A4A;
@@ -574,6 +586,29 @@ footer {
 }
 
 
+/*========================================================
+
+                        TEST
+
+=========================================================*/
+
+
+#largeBanner{
+    background: #76C9E7;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#largeBanner h1{
+    text-align: center;
+}
+
+
+
 /*----------------------------------------------------------
 
                    Media queries
@@ -899,11 +934,6 @@ footer {
     #bottomMain .row {
         margin-left: 0;
     }
-
-
-
-
-
 }
 
 
