@@ -586,26 +586,7 @@ footer {
 }
 
 
-/*========================================================
 
-                        TEST
-
-=========================================================*/
-
-
-#largeBanner{
-    background: #76C9E7;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-#largeBanner h1{
-    text-align: center;
-}
 
 
 

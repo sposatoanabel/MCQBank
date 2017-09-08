@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css"/>
     <!--main css-->
     <link rel="stylesheet" href="assets/css/main.css">
+    <!--main css-->
+    <link rel="stylesheet" href="assets/css/test.css">
 
 </head>
 <body>
@@ -113,48 +115,102 @@
             </div>
             <!-- / row -->
         </section>
-        <section id="testTabs" class="container">
-            <nav class="nav nav-tabs" id="myTab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-test-mode-tab" data-toggle="tab" href="#nav-test-mode" role="tab" aria-controls="nav-test-mode" aria-expanded="true">Home</a>
-                <a class="nav-item nav-link" id="nav-question-mode-tab" data-toggle="tab" href="#nav-question-mode" role="tab" aria-controls="nav-question-mode">Profile</a>
-                <a class="nav-item nav-link" id="nav-additional-options-tab" data-toggle="tab" href="#nav-additional-options" role="tab" aria-controls="nav-additional-options">Profile</a>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-test-mode" role="tabpanel" aria-labelledby="nav-test-mode-tab">...</div>
-                <div class="tab-pane fade" id="nav-question-mode" role="tabpanel" aria-labelledby="nav-question-mode-tab">...</div>
-                <div class="tab-pane fade" id="nav-additional-options" role="tabpanel" aria-labelledby="nav-additional-options-tab">...</div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div id="footerDiv" class="container">
-            <div id="copyRight" class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                &copy; 2017 MCQBank <span id="copyrightSpan"
-                                          class="hidden-xs">web design company DotPeak digital agency</span>
-            </div><!--/copyRight-->
-            <div id="legal" class="hidden-xs hidden-sm hidden-md col-lg-6">
-                <span><a href="#">Terms & conditions</a></span>
-                <span><a href="#">  | Privacy policy  </a></span>
-                <div class="btn-group dropup">
-                    <button type="button" class="btn btn-secondary">
-                        Share this page
-                    </button>
-                    <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href=""><span class=""></span></a></li>
-                        <li><a href=""><span class="fa fa-facebook"></span></a></li>
-                        <li><a href=""><span class="fa fa-twitter"></span></a></li>
-                        <li><a href=""><span class="fa fa-google-plus"></span></a></li>
-                        <li><a href=""><span class="fa fa-linkedin"></span></a></li>
-                        <li><a href=""><span class="fa fa-pinterest"></span></a></li>
-                        <li><a href=""><span class="fa fa-tumblr"></span></a></li>
-                    </ul>
+        <section>
+            <div id="testTabs" class="container">
+                <ul class="nav nav-pills nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#nav-test-mode">Test Mode</a></li>
+                    <li><a data-toggle="tab" href="#nav-question-mode">Test Mode</a></li>
+                    <li><a data-toggle="tab" href="#nav-additional-options">Additional Options</a></li>
+                </ul><!-- nav-pills -->
+
+                <div class="tab-content clearfix">
+                    <div class="tab-pane active" id="nav-test-mode">
+                        <form>
+                            <div class="form-group col-md-12">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option1" checked>
+                                        Timed Exam Session
+                                    </label>
+                                </div><!-- / form-check-->
+
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option2">
+                                        Non - Timed Revision Session
+                                    </label>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group row">
+                                <label for="answers" class="col-sm-2 col-form-label">How many questions?</label>
+                                <div class="col-sm-10">
+                                    <input type="number" class="form-control" id="answers">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- / col-->
+
+                <div class="tab-pane" id="nav-question-mode">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.</p>
                 </div>
-            </div><!--/legal-->
-        </div>
-    </footer>
+                <div class="tab-pane" id="nav-additional-options">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.</p>
+                </div>
+            </div><!-- / tab-content -->
+</div>
+</section>
+</main>
+<footer>
+    <div id="footerDiv" class="container">
+        <div id="copyRight" class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            &copy; 2017 MCQBank <span id="copyrightSpan"
+                                      class="hidden-xs">web design company DotPeak digital agency</span>
+        </div><!--/copyRight-->
+        <div id="legal" class="hidden-xs hidden-sm hidden-md col-lg-6">
+            <span><a href="#">Terms & conditions</a></span>
+            <span><a href="#">  | Privacy policy  </a></span>
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary">
+                    Share this page
+                </button>
+                <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href=""><span class=""></span></a></li>
+                    <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                    <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                    <li><a href=""><span class="fa fa-google-plus"></span></a></li>
+                    <li><a href=""><span class="fa fa-linkedin"></span></a></li>
+                    <li><a href=""><span class="fa fa-pinterest"></span></a></li>
+                    <li><a href=""><span class="fa fa-tumblr"></span></a></li>
+                </ul>
+            </div>
+        </div><!--/legal-->
+    </div>
+</footer>
 </div>
 
 

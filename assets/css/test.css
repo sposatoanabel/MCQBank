@@ -1,0 +1,446 @@
+/*========================================================
+
+                        TEST
+
+=========================================================*/
+
+
+#largeBanner{
+    background: #76C9E7;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#largeBanner h1{
+    text-align: center;
+}
+
+
+
+#testTabs .tab-content {
+    color : gray;
+    background-color: #ffffff;
+    padding : 5px 15px;
+}
+
+
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus{
+    background-color: #ffffff;
+    color: #30b2cb;
+    border: 1px solid #d8e8e5;
+    border-radius: 4px 0 4px 0;
+}
+
+
+/* inactive tab*/
+
+
+.nav-pills>li>a{
+    border-radius: 4px 4px 0 0;
+    background-color: #30b2cb;
+    color: #ffffff;
+}
+
+
+/* active tab */
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: #30b2cb;
+    background-color: #ffffff;
+    border: 1px solid lightblue;
+}
+
+#testTabs>.nav, #testTabs>.nav-tabs, #testTabs>.nav-pills{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+#testTabs{
+    margin: 60px auto;
+}
+
+/*----------------------------------------------------------
+
+                   Media queries
+
+-----------------------------------------------------------*/
+
+
+
+@media screen and (min-width: 1200px) {
+
+    /*TOP MAIN RIGHT COL */
+
+    #bannerLg {
+        display: block;
+    }
+
+    #bannerL {
+        display: none;
+    }
+
+    /*BOTTOM MAIN RIGHT COL */
+
+    #addNews, #addTimer {
+        width: 48%;
+        height: 590px;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+    /*TOP MAIN LEFT COL */
+
+    #topMain .leftCol {
+        padding: 24px;
+    }
+
+    /*TOP MAIN RIGHT COL */
+    #bannerL {
+        display: block;
+    }
+
+    #bannerLg {
+        display: none;
+    }
+
+    /*BOTTOM MAIN LEFT COL */
+
+    #bottomMain .planBox {
+        width: 48%;
+        margin: 9px !important;
+        height: 200px;
+        padding: 16px;
+    }
+
+    /*BOTTOM MAIN RIGHT COL */
+
+    .addInfo ul li,
+    .addInfo ul li a {
+        color: #2fb1c7;
+        line-height: 1.5em;
+        list-style: none;
+    }
+
+    .addInfo ul li a:hover {
+        color: #2fb1c7;
+        line-height: 1.5em;
+        opacity: 0.8;
+        text-decoration: none;
+    }
+
+    #addNews, #addTimer {
+        width: 48%;
+        height: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #addNews {
+        margin-right: 1.3%;
+    }
+
+    #addTimer {
+        margin-left: 1.3%;
+    }
+
+    #nextExam {
+        margin-top: 40px;
+    }
+
+    .newsDiv h4 {
+        margin-bottom: 29px;
+    }
+
+    .newsDiv ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    .introDiv {
+        margin: 45px 0;
+        padding: 0;
+    }
+
+    #readMoreBtn {
+        color: #2fb1c7;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+
+    /* FOOTER */
+
+    #footerDiv {
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 991px) {
+
+    /* HEADER */
+
+    .navbar-brand {
+        padding: 12px 0 12px;
+    }
+
+    .navbar-brand > img {
+        display: block;
+        width: 126px;
+        height: auto;
+    }
+
+    .nav > li > a {
+        padding: 15px 15px;
+        border-bottom: 1px solid #eeeeee;
+        font-size: 0.8rem;
+    }
+
+    .navbar .container > .navbar-collapse {
+        background-color: #ffffff;
+    }
+
+    /*TOP MAIN LEFT COL */
+
+    #topMain .leftCol {
+        padding: 16px;
+        margin-left: 0;
+    }
+
+    /*TOP MAIN RIGHT COL */
+
+    .rightCol {
+        padding-right: 15px;
+        padding-left: 0;
+    }
+
+    #bannerL {
+        display: none;
+    }
+
+    #bannerMd2 {
+        display: block;
+    }
+
+    .mainBanner{
+        padding-left: 15px;
+    }
+
+    /*BOTTOM MAIN LEFT COL */
+
+    #bottomMain {
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    #bottomMain .planBox {
+        width: 100%;
+        margin: 20px 0 !important;
+        height: 200px;
+        padding: 16px;
+    }
+
+    #bottomMain .leftCol {
+        padding: 15px;
+    }
+
+    #signUp .btn-primary {
+        padding: 20px 45px;
+    }
+
+    /*BOTTOM MAIN RIGHT COL */
+
+    .introDiv {
+        margin: 0;
+    }
+
+    #addNews, #addTimer {
+        width: 100%;
+        margin: 20px 0;
+
+    }
+
+    .addInfo .row{
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+    /* HEADER */
+
+    #topNav {
+        display: none;
+    }
+
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #555;
+        background: none;
+        border-color: #eeeeee;
+    }
+
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:focus,
+    .navbar-default .navbar-nav>.active>a:hover{
+        color: #2fb1c7;
+        background-color: white;
+    }
+
+    #bottomNav {
+        top: 0;
+        z-index: 999;
+    }
+
+    .navbar .container ul {
+        margin: 127px 0 0 0;
+        padding: 0 23px;
+        width: 100%;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+    }
+
+    #btnSubscribe, #btnLogIn {
+        padding: 10px;
+    }
+
+
+    #topMain {
+        margin-top: 0;
+    }
+
+
+    /* TOP MAIN LEFT COL */
+
+    #topMain .leftCol {
+        padding: 40px;
+        margin: 15px;
+    }
+
+    #btnLogIn {
+        display: block;
+    }
+
+    .loginForgotPass a {
+        display: none;
+    }
+
+    .loginForgotPass span {
+        display: block;
+        padding: 18px 0;
+    }
+
+    #loginDiv {
+        margin: 0 auto 17px auto;;
+     }
+
+    .btnLogin a{
+        display: block;
+        color: #5cd3b5;
+        padding: 18px 0;
+        text-align: right;
+        font-weight: 600;
+    }
+
+    .btnLogin a:hover, .btnLogin a:focus {
+        text-decoration: none;
+        opacity: 0.8;
+    }
+
+    .btnLogin button{
+        display: none;
+    }
+
+    #sample {
+        margin-top: 33px;
+    }
+
+    /* TOP MAIN RIGHT COL */
+
+
+    #topMain .mainBanner img{
+        width: 100%;
+        position: relative;
+        padding-left: 0;
+    }
+
+    #bannerMd {
+        display: block;
+    }
+
+    #bannerLg, #bannerSm, #bannerMd2 {
+         display: none;
+     }
+
+    /* BOTTOM MAIN RIGHT COL */
+
+    #bottomMain .row {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 460px) {
+    #topMain .leftCol {
+        padding: 24px;
+        margin: 35px 15px;
+    }
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    #topMain {
+        margin-top: 0;
+    }
+
+    #topMain .mainBanner img{
+        padding-left: 0;
+    }
+
+    #bottomMain .rightCol{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    #bannerMd, #bannerLg, #bannerMd2 {
+        display: none;
+    }
+
+    #bannerSm {
+        display: block;
+    }
+
+    #topMain .mainBanner img{
+        padding-left: 0;
+    }
+}
+
+
