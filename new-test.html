@@ -160,7 +160,8 @@
 
                             <div class="form-group row">
                                 <label class="custom-control custom-radio">
-                                    <input id="radioPersonFormat" name="radio" type="radio" class="custom-control-input">
+                                    <input id="radioPersonFormat" name="radio" type="radio"
+                                           class="custom-control-input">
                                     <span class="custom-control-indicator"></span>
                                     <span class="custom-control-description">Person VUE format</span>
                                 </label>
@@ -179,26 +180,89 @@
                             <div class="form-group row">
                                 <label class="custom-control custom-radio">
                                     <input id="radio" name="radio" type="radio" class="custom-control-input">
-                                    <span class="custom-control-description">Person VUE format</span>
+                                    <span class="custom-control-description">Situational Judgement Test (SJT)</span>
                                 </label>
                                 <label class="custom-control custom-radio">
                                     <input id="radio2" name="radio" type="radio" class="custom-control-input">
-                                    <span class="custom-control-description">MCQ Bank format</span>
+                                    <span class="custom-control-description">Clinical Knowledge (CKT)</span>
                                 </label>
                             </div>
                             <h4>Question type</h4>
                             <div class="form-group row">
-                                <label class="custom-control custom-radio">
-                                    <input name="checkbox" type="checkbox" class="custom-control-input" checked>
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Multiple Best Answer (MBA)</span>
-                                </label>
-                                <label class="custom-control custom-radio">
-                                    <input name="checkbox" type="checkbox" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Ranking</span>
-                                </label>
+                                <div class="form-check">
+                                    <label class="custom-control custom-radio">
+                                        <input name="checkbox" type="checkbox" class="custom-control-input" checked>
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Multiple Best Answer (MBA)</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="custom-control custom-radio">
+
+                                        <input name="checkbox" type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Ranking</span>
+                                    </label>
+                                </div>
                             </div>
+
+
+                            <div class="form-group row">
+                                <label class="mr-sm-2" for="inlineFormCustomSelectPref">Topics</label>
+                                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelectPref">
+                                    <option selected>Select All</option>
+                                    <option value="1">Select None</option>
+                                </select>
+                            </div>
+                            <div class="form-group row">
+
+                                <div class="col-sm-5">
+                                    <div class="form-check">
+                                        <label class="form-check-label  col-sm-12">
+                                            <input class="form-check-input" type="checkbox"> Cardiovascular
+                                        </label>
+                                        <label class="form-check-label col-sm-12">
+                                            <input class="form-check-input" type="checkbox"> Dermatology / ENT / Eyes
+                                        </label>
+                                        <label class="form-check-label col-sm-12">
+                                            <input class="form-check-input" type="checkbox"> Endocrinology / Metabolic
+                                        </label>
+                                        <label class="form-check-label col-sm-12">
+                                            <input class="form-check-input" type="checkbox"> Gastroenterology / Nutrition
+                                        </label>
+                                        <label class="form-check-label col-sm-12">
+                                            <input class="form-check-input" type="checkbox"> Infectious diseases
+                                        </label>
+                                        <label class="form-check-label col-sm-12">
+                                            <input class="form-check-input" type="checkbox"> Infectious diseases
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="form-check">
+                                        <div class="form-check">
+                                            <label class="form-check-label col-sm-12">
+                                                <input class="form-check-input" type="checkbox"> Cardiovascular
+                                            </label>
+                                            <label class="form-check-label col-sm-12">
+                                                <input class="form-check-input" type="checkbox"> Dermatology / ENT / Eyes
+                                            </label>
+                                            <label class="form-check-label col-sm-12">
+                                                <input class="form-check-input" type="checkbox"> Endocrinology / Metabolic
+                                            </label>
+                                            <label class="form-check-label col-sm-12">
+                                                <input class="form-check-input" type="checkbox"> Gastroenterology / Nutrition
+                                            </label>
+                                            <label class="form-check-label col-sm-12">
+                                                <input class="form-check-input" type="checkbox"> Infectious diseases
+                                            </label>
+                                            <label class="form-check-label col-sm-12">
+                                                <input class="form-check-input" type="checkbox"> Infectious diseases
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div><!-- / col-->
+                            </div><!-- / form-group row -->
                             <button type="button" class="btn btn-success btn-lg nextButton">Preview</button>
                             <button type="button" class="btn btn-success btn-lg nextButton">Next</button>
                         </form>
@@ -208,20 +272,70 @@
                             <div class="form-group col-md-12">
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                        <input class="form-check-input" type="radio" name="gridRadios"
                                                value="option1" checked>
                                         Timed Exam Session
                                     </label>
                                 </div><!-- / form-check-->
 
                                 <div class="form-check">
+
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                        <input class="form-check-input" type="radio" name="gridRadios"
                                                value="option2">
                                         Non - Timed Revision Session
                                     </label>
                                 </div>
-                            </div>
+                            </div><!--/ form-group-->
+                            <div class="form-group row">
+                                <h4>Topics</h4>
+                                <div class="col-sm-5">
+                                    <div class="form-check">
+                                        <label class="form-check-label  col-sm-12">
+                                            <input class="form-check-input" type="checkbox"> Cardiovascular
+                                        </label>
+                                        <label class="form-check-label col-sm-12">
+                                            <input class="form-check-input" type="checkbox"> Dermatology / ENT / Eyes
+                                        </label>
+                                        <label class="form-check-label col-sm-12">
+                                            <input class="form-check-input" type="checkbox"> Endocrinology / Metabolic
+                                        </label>
+                                        <label class="form-check-label col-sm-12">
+                                            <input class="form-check-input" type="checkbox"> Gastroenterology / Nutrition
+                                        </label>
+                                        <label class="form-check-label col-sm-12">
+                                            <input class="form-check-input" type="checkbox"> Infectious diseases
+                                        </label>
+                                        <label class="form-check-label col-sm-12">
+                                            <input class="form-check-input" type="checkbox"> Infectious diseases
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="form-check">
+                                        <div class="form-check">
+                                            <label class="form-check-label col-sm-12">
+                                                <input class="form-check-input" type="checkbox"> Cardiovascular
+                                            </label>
+                                            <label class="form-check-label col-sm-12">
+                                                <input class="form-check-input" type="checkbox"> Dermatology / ENT / Eyes
+                                            </label>
+                                            <label class="form-check-label col-sm-12">
+                                                <input class="form-check-input" type="checkbox"> Endocrinology / Metabolic
+                                            </label>
+                                            <label class="form-check-label col-sm-12">
+                                                <input class="form-check-input" type="checkbox"> Gastroenterology / Nutrition
+                                            </label>
+                                            <label class="form-check-label col-sm-12">
+                                                <input class="form-check-input" type="checkbox"> Infectious diseases
+                                            </label>
+                                            <label class="form-check-label col-sm-12">
+                                                <input class="form-check-input" type="checkbox"> Infectious diseases
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div><!-- / col-->
+                            </div><!-- / form-group row -->
                         </form>
                     </div>
                 </div><!-- / tab-content -->
