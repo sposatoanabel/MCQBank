@@ -67,6 +67,35 @@
     margin: 60px auto;
 }
 
+
+#totalQuestions input[type="number"],
+#totalTimePerTest input[type="number"] {
+    background-color: #d8e8e5;
+    opacity: 0.75;
+    border: 1px solid #d8e8e5;
+    padding: 18px 15px;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.form-control{
+    background-color: #d8e8e5;
+    opacity: 0.75;
+    border: 1px solid #d8e8e5;
+    padding: 18px 15px;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+
+.nextButton{
+    width: 20%;
+}
+
+
+
 /*----------------------------------------------------------
 
                    Media queries
