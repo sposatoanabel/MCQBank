@@ -49,11 +49,42 @@
 
         }, // bindReadMoreButton()
 
+
+        toggleAccordionIcon = function () {
+            function toggleAccordionIcon(e) {
+                $(e.target)
+                    .prev('.panel-heading')
+                    .find('.show-hide')
+                    .toggleClass('glyphicon-plus glyphicon-minus'); // find 'show-hide' class element and swap the icon every time someone clicks
+            }
+
+            $('.card').on('hidden.bs.collapse', toggleAccordionIcon);
+            $(this).on('shown.bs.collapse', toggleAccordionIcon);
+
+        }, // toggleAccordionIcon
+
+        hideAccordion = function () {
+            $(window).resize(function () {
+                var viewportWidth = $(window).width();
+                if (viewportWidth < 767){
+                    $("#accordionTest").show();
+                    $("#testTabs").hide();
+
+                } else if (viewportWidth > 767){
+                    $("#accordionTest").hide();
+                    $("#testTabs").show();
+                }
+            });
+        },
+
+
         init = function () {
             resizeNavBar();
             switchClassHamIcon();
             affixBottomNav();
             bindReadMoreButton();
+            toggleAccordionIcon();
+            hideAccordion();
         }
     ; // init()
 
