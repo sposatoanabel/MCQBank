@@ -55,25 +55,22 @@
                 $(e.target)
                     .prev('.panel-heading')
                     .find('.show-hide')
-                    .toggleClass('glyphicon-plus glyphicon-minus'); // find 'show-hide' class element and swap the icon every time someone clicks
+                    .toggleClass('fa-plus-circle fa-minus-circle'); // find 'show-hide' class element and swap the icon every time someone clicks
             }
 
-            $('.card').on('hidden.bs.collapse', toggleAccordionIcon);
+            $('.panel-group').on('hidden.bs.collapse', toggleAccordionIcon);
             $(this).on('shown.bs.collapse', toggleAccordionIcon);
 
         }, // toggleAccordionIcon
 
-        hideAccordion = function () {
-            $(window).resize(function () {
-                var viewportWidth = $(window).width();
-                if (viewportWidth < 767){
-                    $("#accordionTest").show();
-                    $("#testTabs").hide();
 
-                } else if (viewportWidth > 767){
-                    $("#accordionTest").hide();
-                    $("#testTabs").show();
-                }
+
+
+        addActiveStateToTheAccordion = function () {
+
+            $('#accordion .panel').on( "click", function() {
+                $(this).siblings().find(".panel-heading").removeClass("panel-heading-active");
+                $(this).find(".panel-heading").toggleClass("panel-heading-active");
             });
         },
 
@@ -84,7 +81,7 @@
             affixBottomNav();
             bindReadMoreButton();
             toggleAccordionIcon();
-            hideAccordion();
+            addActiveStateToTheAccordion();
         }
     ; // init()
 

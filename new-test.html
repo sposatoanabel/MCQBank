@@ -135,7 +135,7 @@
                                     </label>
                                 </div><!-- / form-check-->
 
-                                <div class="form-check">
+                                <div class="form-check ">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
                                                value="option2">
@@ -144,13 +144,13 @@
                                 </div>
                             </div>
                             <hr>
-                            <div class="form-group row">
+                            <div class="form-group row col-lg-12 col-md-12 col-sm-12">
                                 <label for="totalQuestions" class="col-sm-3 col-form-label">How many questions?</label>
                                 <div class="col-sm-5">
                                     <input type="number" class="form-control" id="totalQuestions">
                                 </div>
                             </div>
-                            <div class="form-group row">
+                            <div class="form-group row col-lg-12 col-md-12 col-sm-12">
                                 <label for="totalTimePerTest" class="col-sm-3 col-form-label">Total time per test
                                     (min)?</label>
                                 <div class="col-sm-5">
@@ -158,37 +158,49 @@
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <label class="custom-control custom-radio">
-                                    <input id="radioPersonFormat" name="radio" type="radio"
-                                           class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Person VUE format</span>
-                                </label>
-                                <label class="custom-control custom-radio">
-                                    <input id="radioMcqFormat" name="radio" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">MCQ Bank format</span>
-                                </label>
+                            <div class="form-group row col-lg-12 col-md-12 col-sm-12">
+                                <div class="col-sm-3">
+                                    <label class="custom-control custom-radio">
+                                        <input id="radioPersonFormat" name="radio" type="radio"
+                                               class="custom-control-input">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">Person VUE format</span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-5">
+                                    <label class="custom-control custom-radio" id="mcqFormat">
+                                        <input id="radioMcqFormat" name="radio" type="radio"
+                                               class="custom-control-input">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description">MCQ Bank format</span>
+                                    </label>
+
+                                </div>
+
                             </div>
-                            <button type="button" class="btn btn-success btn-lg nextButton">Next</button>
+                            <button type="button" class="btn btn-success btn-lg nextBtn">Next</button>
                         </form>
                     </div><!-- / col-->
 
                     <div class="tab-pane" id="nav-question-mode">
                         <form>
                             <div class="form-group row">
-                                <label class="custom-control custom-radio">
-                                    <input id="radio" name="radio" type="radio" class="custom-control-input">
-                                    <span class="custom-control-description">Situational Judgement Test (SJT)</span>
-                                </label>
-                                <label class="custom-control custom-radio">
-                                    <input id="radio2" name="radio" type="radio" class="custom-control-input">
-                                    <span class="custom-control-description">Clinical Knowledge (CKT)</span>
-                                </label>
+                                <div class="col-sm-6">
+                                    <label class="custom-control custom-radio pull-right">
+                                        <input id="radio" name="radio" type="radio" class="custom-control-input">
+                                        <span class="custom-control-description">Situational Judgement Test (SJT)</span>
+                                    </label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="custom-control custom-radio">
+                                        <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                        <span class="custom-control-description">Clinical Knowledge (CKT)</span>
+                                    </label>
+                                </div>
                             </div>
                             <h4>Question type</h4>
-                            <div class="form-group row">
+                            <hr>
+                            <div class="form-group row col-lg-12 col-md-12 col-sm-12">
                                 <div class="form-check">
                                     <label class="custom-control custom-radio">
                                         <input name="checkbox" type="checkbox" class="custom-control-input" checked>
@@ -208,32 +220,37 @@
 
 
                             <div class="form-group row">
-                                <label class="mr-sm-2" for="inlineFormCustomSelectPref">Topics</label>
-                                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelectPref">
-                                    <option selected>Select All</option>
-                                    <option value="1">Select None</option>
-                                </select>
-                            </div>
-                            <div class="form-group row">
+                                <div class="col-sm-8">
+                                    <label class="mr-sm-2" for="inlineFormCustomSelectPref">Topics</label>
+                                </div>
+                                <div class="col-sm-4 text-right">
+                                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelectPref">
+                                        <option selected>Select All</option>
+                                        <option value="1">Select None</option>
+                                    </select>
+                                </div>
+                            </div><!-- form-group -->
+                            <hr>
+                            <div class="form-group row" id="topics">
                                 <div class="col-sm-5">
                                     <div class="form-check">
-                                        <label class="form-check-label  col-sm-12">
-                                            <input class="form-check-input" type="checkbox"> Cardiovascular
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox"> panel-groupiovascular
                                         </label>
-                                        <label class="form-check-label col-sm-12">
+                                        <label class="form-check-label">
                                             <input class="form-check-input" type="checkbox"> Dermatology / ENT / Eyes
                                         </label>
-                                        <label class="form-check-label col-sm-12">
+                                        <label class="form-check-label">
                                             <input class="form-check-input" type="checkbox"> Endocrinology / Metabolic
                                         </label>
-                                        <label class="form-check-label col-sm-12">
+                                        <label class="form-check-label">
                                             <input class="form-check-input" type="checkbox"> Gastroenterology /
                                             Nutrition
                                         </label>
-                                        <label class="form-check-label col-sm-12">
+                                        <label class="form-check-label">
                                             <input class="form-check-input" type="checkbox"> Infectious diseases
                                         </label>
-                                        <label class="form-check-label col-sm-12">
+                                        <label class="form-check-label">
                                             <input class="form-check-input" type="checkbox"> Infectious diseases
                                         </label>
                                     </div>
@@ -241,33 +258,33 @@
                                 <div class="col-sm-5">
                                     <div class="form-check">
                                         <div class="form-check">
-                                            <label class="form-check-label col-sm-12">
-                                                <input class="form-check-input" type="checkbox"> Cardiovascular
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox"> panel-groupiovascular
                                             </label>
-                                            <label class="form-check-label col-sm-12">
+                                            <label class="form-check-label">
                                                 <input class="form-check-input" type="checkbox"> Dermatology / ENT /
                                                 Eyes
                                             </label>
-                                            <label class="form-check-label col-sm-12">
+                                            <label class="form-check-label">
                                                 <input class="form-check-input" type="checkbox"> Endocrinology /
                                                 Metabolic
                                             </label>
-                                            <label class="form-check-label col-sm-12">
+                                            <label class="form-check-label">
                                                 <input class="form-check-input" type="checkbox"> Gastroenterology /
                                                 Nutrition
                                             </label>
-                                            <label class="form-check-label col-sm-12">
+                                            <label class="form-check-label">
                                                 <input class="form-check-input" type="checkbox"> Infectious diseases
                                             </label>
-                                            <label class="form-check-label col-sm-12">
+                                            <label class="form-check-label">
                                                 <input class="form-check-input" type="checkbox"> Infectious diseases
                                             </label>
                                         </div>
                                     </div>
                                 </div><!-- / col-->
                             </div><!-- / form-group row -->
-                            <button type="button" class="btn btn-success btn-lg nextButton prevBtn">< Preview</button>
-                            <button type="button" class="btn btn-success btn-lg nextButton ne">Next ></button>
+                            <button type="button" class="btn btn-success btn-lg prevBtn">< Preview</button>
+                            <button type="button" class="btn btn-success btn-lg nextBtn">Next ></button>
                         </form>
                     </div>
                     <div class="tab-pane" id="nav-additional-options">
@@ -328,284 +345,321 @@
                                     </div>
                                 </div><!-- / col-sm-12 -->
                             </div><!-- / form-group row -->
-                            <button type="button" class="btn btn-success btn-lg nextButton">< Previous</button>
-                            <button type="button" class="btn btn-success btn-lg nextButton">Start Test!</button>
+                            <button type="button" class="btn btn-success btn-lg prevBtn">< Previous</button>
+                            <button type="button" class="btn btn-success btn-lg nextBtn">Start Test!</button>
                         </form>
                     </div>
                 </div><!-- / tab-content -->
             </div>
+
+            <!-- accordion for mobile-->
+
             <div id="accordionTest" class="container">
-                <div id="accordion" role="tablist">
-                    <div class="card">
-                        <div class="card-header panel-heading" role="tab" id="headingOne">
-                            <h5 class="mb-0">
-                                <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false"
-                                   aria-controls="collapseOne">
-                                    Test Mode
-                                    <i class="show-hide glyphicon glyphicon-plus"></i>
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <form>
-                                    <div class="form-group col-md-12">
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="gridRadios"
-                                                       id="gridRadios2"
-                                                       value="option1" checked>
-                                                Timed Exam Session
-                                            </label>
-                                        </div><!-- / form-check-->
-
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="gridRadios"
-                                                       id="gridRadios1"
-                                                       value="option2">
-                                                Non - Timed Revision Session
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="form-group row">
-                                        <label for="totalQuestions" class="col-sm-2 col-form-label">How many
-                                            questions?</label>
-                                        <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="totalQuestions">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="totalTimePerTest" class="col-sm-2 col-form-label">Total time per
-                                            test
-                                            (min)?</label>
-                                        <div class="col-sm-10">
-                                            <input type="number" class="form-control" id="totalTimePerTest">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label class="custom-control custom-radio">
-                                            <input id="radioPersonFormat" name="radio" type="radio"
-                                                   class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">Person VUE format</span>
-                                        </label>
-                                        <label class="custom-control custom-radio">
-                                            <input id="radioMcqFormat" name="radio" type="radio"
-                                                   class="custom-control-input">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">MCQ Bank format</span>
-                                        </label>
-                                    </div>
-                                    <button type="button" class="btn btn-success btn-lg nextButton">Next</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div><!-- / first panel -->
-                    <div class="card">
-                        <div class="card-header panel-heading" role="tab" id="headingTwo">
-                            <h5 class="mb-0">
-                                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
-                                   aria-controls="collapseTwo">
-                                    Question Mode
-                                    <i class="show-hide glyphicon glyphicon-plus"></i>
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <form>
-                                    <div class="form-group row">
-                                        <label class="custom-control custom-radio">
-                                            <input id="radio" name="radio" type="radio" class="custom-control-input">
-                                            <span class="custom-control-description">Situational Judgement Test (SJT)</span>
-                                        </label>
-                                        <label class="custom-control custom-radio">
-                                            <input id="radio2" name="radio" type="radio" class="custom-control-input">
-                                            <span class="custom-control-description">Clinical Knowledge (CKT)</span>
-                                        </label>
-                                    </div>
-                                    <h4>Question type</h4>
-                                    <div class="form-group row">
-                                        <div class="form-check">
-                                            <label class="custom-control custom-radio">
-                                                <input name="checkbox" type="checkbox" class="custom-control-input"
-                                                       checked>
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Multiple Best Answer (MBA)</span>
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <label class="custom-control custom-radio">
-
-                                                <input name="checkbox" type="checkbox" class="custom-control-input">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Ranking</span>
-                                            </label>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="form-group row">
-                                        <label class="mr-sm-2" for="inlineFormCustomSelectPref">Topics</label>
-                                        <select class="custom-select mb-2 mr-sm-2 mb-sm-0"
-                                                id="inlineFormCustomSelectPref">
-                                            <option selected>Select All</option>
-                                            <option value="1">Select None</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-sm-5">
-                                            <div class="form-check">
-                                                <label class="form-check-label  col-sm-12">
-                                                    <input class="form-check-input" type="checkbox"> Cardiovascular
-                                                </label>
-                                                <label class="form-check-label col-sm-12">
-                                                    <input class="form-check-input" type="checkbox"> Dermatology / ENT /
-                                                    Eyes
-                                                </label>
-                                                <label class="form-check-label col-sm-12">
-                                                    <input class="form-check-input" type="checkbox"> Endocrinology /
-                                                    Metabolic
-                                                </label>
-                                                <label class="form-check-label col-sm-12">
-                                                    <input class="form-check-input" type="checkbox"> Gastroenterology /
-                                                    Nutrition
-                                                </label>
-                                                <label class="form-check-label col-sm-12">
-                                                    <input class="form-check-input" type="checkbox"> Infectious diseases
-                                                </label>
-                                                <label class="form-check-label col-sm-12">
-                                                    <input class="form-check-input" type="checkbox"> Infectious diseases
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <div class="form-check">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                           href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Collapsible Group Item #1 <i class="show-hide fa fa-plus-circle"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                                     aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <form>
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                                 <div class="form-check">
-                                                    <label class="form-check-label col-sm-12">
-                                                        <input class="form-check-input" type="checkbox"> Cardiovascular
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked>
+                                                        Timed Exam Session
                                                     </label>
-                                                    <label class="form-check-label col-sm-12">
-                                                        <input class="form-check-input" type="checkbox"> Dermatology /
-                                                        ENT /
-                                                        Eyes
-                                                    </label>
-                                                    <label class="form-check-label col-sm-12">
-                                                        <input class="form-check-input" type="checkbox"> Endocrinology /
-                                                        Metabolic
-                                                    </label>
-                                                    <label class="form-check-label col-sm-12">
-                                                        <input class="form-check-input" type="checkbox">
-                                                        Gastroenterology /
-                                                        Nutrition
-                                                    </label>
-                                                    <label class="form-check-label col-sm-12">
-                                                        <input class="form-check-input" type="checkbox"> Infectious
-                                                        diseases
-                                                    </label>
-                                                    <label class="form-check-label col-sm-12">
-                                                        <input class="form-check-input" type="checkbox"> Infectious
-                                                        diseases
+                                                </div><!-- / form-check-->
+
+                                                <div class="form-check ">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option2">
+                                                        Non - Timed Revision Sessions
                                                     </label>
                                                 </div>
                                             </div>
-                                        </div><!-- / col-->
-                                    </div><!-- / form-group row -->
-                                    <button type="button" class="btn btn-success btn-lg nextButton prevBtn">< Preview
-                                    </button>
-                                    <button type="button" class="btn btn-success btn-lg nextButton ne">Next ></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div><!-- / card -->
-                    <div class="card">
-                        <div class="card-header panel-heading" role="tab" id="headingThree">
-                            <h5 class="mb-0">
-                                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false"
-                                   aria-controls="collapseThree">
-                                    Additional Options
-                                    <i class="show-hide glyphicon glyphicon-plus"></i>
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
-                             data-parent="#accordion">
-                            <div class="card-body">
-                                <form action="">
-                                    <div class="form-group col-md-12">
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="gridRadios"
-                                                       value="option1" checked>
-                                                Face all questions
-                                            </label>
-                                        </div><!-- / form-check-->
+                                            <hr>
+                                            <div class="form-group row col-lg-12 col-md-12 col-sm-12">
+                                                <label for="totalQuestions" class="col-sm-3 col-form-label">How many questions?</label>
+                                                <div class="col-sm-5">
+                                                    <input type="number" class="form-control totalQuestions">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row col-lg-12 col-md-12 col-sm-12">
+                                                <label for="totalTimePerTest" class="col-sm-3 col-form-label">Total time
+                                                    per test
+                                                    (min)?</label>
+                                                <div class="col-sm-5">
+                                                    <input type="number" class="form-control totalTimePerTest">
+                                                </div>
+                                            </div>
 
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="gridRadios"
-                                                       value="option1">
-                                                Face questions that I have not seen before
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="gridRadios"
-                                                       value="option2">
-                                                Face questions that I got wrong last time
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="radio" name="gridRadios"
-                                                       value="option3">
-                                                Face questions that I got wrong last time or have not seen before
-                                            </label>
-                                        </div>
-                                    </div><!--/ form-group-->
-                                    <div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <div class="form-check">
-                                                <label class="form-check-label  col-sm-12">
-                                                    <input class="form-check-input" type="checkbox" checked> See answers
-                                                    with feedback after each question
-                                                </label>
-                                                <label class="form-check-label col-sm-12">
-                                                    <input class="form-check-input" type="checkbox"> Stopwatch visible?
-                                                    You can keep track of time that has passed since you started
-                                                    question.
-                                                </label>
-                                                <label class="form-check-label col-sm-12">
-                                                    <input class="form-check-input" type="checkbox"> Set an audio
-                                                    reminder? Set a reminder to sound after a set amount of time has
-                                                    elapsed (in seconds). [?]
-                                                </label>
+                                            <div class="form-group row col-lg-12 col-md-12 col-sm-12">
+                                                <div class="col-sm-3">
+                                                    <label class="custom-control custom-radio">
+                                                        <input id="radioPersonFormat" name="radio" type="radio"
+                                                               class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Person VUE format</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label class="custom-control custom-radio" id="mcqFormat">
+                                                        <input id="radioMcqFormat" name="radio" type="radio"
+                                                               class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">MCQ Bank format</span>
+                                                    </label>
+
+                                                </div>
+
                                             </div>
-                                        </div><!-- / col-sm-12 -->
-                                    </div><!-- / form-group row -->
-                                    <div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <div class="form-check">
-                                                <label class="form-check-label  col-sm-12">
-                                                    <input class="form-check-input" type="checkbox" checked> View
-                                                    questions at random
-                                                </label>
+                                            <button type="button" class="btn btn-success btn-lg nextButton">Next
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div><!-- / panel-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                           data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                           aria-controls="collapseTwo">
+                                            Collapsible Group Item #2 <i class="show-hide fa fa-plus-circle"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                     aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <form>
+                                            <div class="form-group row">
+                                                <div class="col-sm-6">
+                                                    <label class="custom-control custom-radio pull-right-sm">
+                                                        <input id="radio" name="radio" type="radio"
+                                                               class="custom-control-input">
+                                                        <span class="custom-control-description">Situational Judgement Test (SJT)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label class="custom-control custom-radio">
+                                                        <input id="radio2" name="radio" type="radio"
+                                                               class="custom-control-input">
+                                                        <span class="custom-control-description">Clinical Knowledge (CKT)</span>
+                                                    </label>
+                                                </div>
                                             </div>
-                                        </div><!-- / col-sm-12 -->
-                                    </div><!-- / form-group row -->
-                                    <button type="button" class="btn btn-success btn-lg nextButton">< Previous</button>
-                                    <button type="button" class="btn btn-success btn-lg nextButton">Start Test!</button>
-                                </form>
+                                            <h4>Question type</h4>
+                                            <hr>
+                                            <div class="form-group row col-lg-12 col-md-12 col-sm-12">
+                                                <div class="form-check">
+                                                    <label class="custom-control custom-radio">
+                                                        <input name="checkbox" type="checkbox"
+                                                               class="custom-control-input" checked>
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Multiple Best Answer (MBA)</span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="custom-control custom-radio">
+
+                                                        <input name="checkbox" type="checkbox"
+                                                               class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Ranking</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-8">
+                                                    <label class="mr-sm-2"
+                                                           for="selectInfo">Topics</label>
+                                                </div>
+                                                <div class="col-sm-4 text-right">
+                                                    <select name="selectTopics"
+                                                            id="selectInfo">
+                                                        <option selected>Select All</option>
+                                                        <option value="1">Select None</option>
+                                                    </select>
+                                                </div>
+                                            </div><!-- form-group -->
+                                            <hr>
+                                            <div class="form-group row" id="topics">
+                                                <div class="col-sm-5">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox">
+                                                       cardiovascular
+                                                        </label>
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox"> Dermatology
+                                                            / ENT / Eyes
+                                                        </label>
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox">
+                                                            Endocrinology / Metabolic
+                                                        </label>
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox">
+                                                            Gastroenterology /
+                                                            Nutrition
+                                                        </label>
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox"> Infectious
+                                                            diseases
+                                                        </label>
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox"> Infectious
+                                                            diseases
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <div class="form-check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                panel-groupiovascular
+                                                            </label>
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                Dermatology / ENT /
+                                                                Eyes
+                                                            </label>
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                Endocrinology /
+                                                                Metabolic
+                                                            </label>
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                Gastroenterology /
+                                                                Nutrition
+                                                            </label>
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                Infectious diseases
+                                                            </label>
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox">
+                                                                Infectious diseases
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- / col-->
+                                            </div><!-- / form-group row -->
+                                            <button type="button" class="btn btn-success btn-lg prevBtn">< Preview
+                                            </button>
+                                            <button type="button" class="btn btn-success btn-lg nextBtn">Next >
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                           data-parent="#accordion" href="#collapseThree">
+                                            Collapsible Group Item #3 <i class="show-hide fa fa-plus-circle"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                     aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <form action="">
+                                            <div class="form-group col-md-12">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                               value="option1" checked>
+                                                        Face all questions
+                                                    </label>
+                                                </div><!-- / form-check-->
+
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                               value="option1">
+                                                        Face questions that I have not seen before
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                               value="option2">
+                                                        Face questions that I got wrong last time
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                               value="option3">
+                                                        Face questions that I got wrong last time or have not seen
+                                                        before
+                                                    </label>
+                                                </div>
+                                            </div><!--/ form-group-->
+                                            <div class="form-group row" id="faceQuestionsOption">
+                                                <div class="col-sm-12">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label  col-sm-12">
+                                                            <input class="form-check-input" type="checkbox" checked> See
+                                                            answers with
+                                                            feedback after each question
+                                                        </label>
+                                                        <label class="form-check-label col-sm-12">
+                                                            <input class="form-check-input" type="checkbox"> Stopwatch
+                                                            visible? You can
+                                                            keep track of time that has passed since you started
+                                                            question.
+                                                        </label>
+                                                        <label class="form-check-label col-sm-12">
+                                                            <input class="form-check-input" type="checkbox"> Set an
+                                                            audio reminder? Set
+                                                            a reminder to sound after a set amount of time has elapsed
+                                                            (in seconds). [?]
+                                                        </label>
+                                                    </div>
+                                                </div><!-- / col-sm-12 -->
+                                            </div><!-- / form-group row -->
+                                            <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label  col-sm-12">
+                                                            <input class="form-check-input" type="checkbox" checked>
+                                                            View questions at
+                                                            random
+                                                        </label>
+                                                    </div>
+                                                </div><!-- / col-sm-12 -->
+                                            </div><!-- / form-group row -->
+                                            <button type="button" class="btn btn-success btn-lg nextBtn">< Previous
+                                            </button>
+                                            <button type="button" class="btn btn-success btn-lg startTestBtn">Start
+                                                Test!
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div><!-- / card -->
+                    </div>
                 </div>
             </div>
+
         </section>
     </main>
     <footer>
