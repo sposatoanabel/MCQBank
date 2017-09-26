@@ -4,8 +4,7 @@
 
 =========================================================*/
 
-
-#largeBanner{
+#largeBanner {
     background: #76C9E7;
     height: 300px;
     width: 100%;
@@ -14,12 +13,9 @@
     align-items: center;
 }
 
-
-#largeBanner h1{
+#largeBanner h1 {
     text-align: center;
 }
-
-
 
 #testTabs .tab-content {
     color: gray;
@@ -28,55 +24,50 @@
     border-radius: 4px;
 }
 
-#testTabs label{
+#testTabs label {
     margin-bottom: 20px;
 }
 
-
-.nav-pills>li.active>a:hover,
-.nav-pills>li.active>a:focus{
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
     background-color: #ffffff;
     color: #30b2cb;
     border: 1px solid #d8e8e5;
     border-radius: 4px 0 4px 0;
 }
 
-
 /* inactive tab*/
 
-
-.nav-pills>li>a{
+.nav-pills > li > a {
     border-radius: 4px 4px 0 0;
     background-color: #30b2cb;
     color: #ffffff;
 }
 
-
 /* active tab */
 
-.nav-pills>li.active>a,
-.nav-pills>li.active>a:focus,
-.nav-pills>li.active>a:hover {
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
     color: #30b2cb;
     background-color: #ffffff;
     border: 1px solid lightblue;
 }
 
-
-#testTabs .nav-pills{
+#testTabs .nav-pills {
     justify-content: center;
     display: flex;
     flex-direction: row;
     float: none;
 }
 
-#testTabs>.nav, #testTabs>.nav-tabs, #testTabs>.nav-pills{
+#testTabs > .nav, #testTabs > .nav-tabs, #testTabs > .nav-pills {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 0;
 }
 
-#testTabs{
+#testTabs {
     margin: 60px auto;
     border: 1px solid #add8e6;
     border-radius: 4px;
@@ -86,7 +77,8 @@
 .form-group {
     margin-bottom: 15px;
 }
-#testTabs label{
+
+#testTabs label {
     color: #6E7C7C;
     font-size: 16px;
     font-weight: 400;
@@ -103,7 +95,7 @@
     margin-bottom: 20px;
 }
 
-.form-control{
+.form-control {
     background-color: #d8e8e5;
     opacity: 0.75;
     border: 1px solid #d8e8e5;
@@ -113,29 +105,25 @@
     margin-bottom: 20px;
 }
 
-
-
 .panel-heading-active {
     transition: all .5s;
-    background-color: #1792ab  !important;
+    background-color: #1792ab !important;
 }
 
-#topics label{
+#topics label {
     display: block;
 }
 
-
-.nextBtn, .prevBtn, .startTestBtn{
+.nextBtn, .prevBtn, .startTestBtn {
     width: 20%;
 }
-
 
 .show-hide {
     float: right;
     color: #ffffff;
 }
 
-.panel-default>.panel-heading{
+.panel-default > .panel-heading {
     color: #fff;
     background-color: #30B2C8;
     border-color: #D2E3E2;
@@ -147,15 +135,13 @@
     padding: 18px 15px;
 }
 
-
-#accordion a:focus, #accordion a:hover{
+#accordion a:focus, #accordion a:hover {
     text-decoration: none;
 }
 
-.pull-right-sm{
+.pull-right-sm {
     float: right !important;
 }
-
 
 /*=============================================
 
@@ -163,11 +149,43 @@
 
 ===============================================*/
 
+#timePerQuestion h3 {
+    margin: 50px 0;
+}
+
+.lightBlueBox {
+    margin: 60px auto;
+    border: 1px solid #add8e6;
+    border-radius: 4px;
+    padding: 50px;
+}
+
+#timeLeft {
+    text-align: center;
+}
+
+.bgTimer {
+    padding: 28px 12px;
+    border: 1px solid #add8e6;
+    font-size: 1.1rem;
+    height: 300px;
+    font-weight: bold;
+    background: #eaf8fb;
+    margin-left: 9px;
+    border-radius: 6px;
+}
+
+#questionAndAnswers ol{
+    list-style: upper-alpha;
+}
+
+#questionAndAnswers .lead{
+    color: #1eb8d7;
+    font-weight: 400
+}
 
 
-
-
-
+.
 
 
 /*----------------------------------------------------------
@@ -176,17 +194,15 @@
 
 -----------------------------------------------------------*/
 
-
-
 @media screen and (min-width: 1200px) {
-    #accordionTest{
+    #accordionTest {
         display: none;
     }
 }
 
 @media screen and (max-width: 1199px) {
 
-    #accordionTest{
+    #accordionTest {
         display: none;
     }
 
@@ -194,26 +210,25 @@
 
 @media screen and (max-width: 991px) {
 
-    #accordionTest{
+    #accordionTest {
         display: none;
     }
 }
 
-
 @media screen and (max-width: 767px) {
 
-    #accordionTest{
+    #accordionTest {
         display: block;
     }
 
 }
 
 @media (max-width: 460px) {
-    #testTabs{
+    #testTabs {
         display: none;
     }
 
-    #topBanner > .row > .col-lg-12{
+    #topBanner > .row > .col-lg-12 {
         padding: 0;
     }
 
@@ -229,7 +244,7 @@
         margin-bottom: 10px;
     }
 
-    .breadcrumb{
+    .breadcrumb {
         padding: 0 15px;
         margin-bottom: 4px;
         margin-top: 8px;
@@ -240,22 +255,21 @@
         margin-top: 41px;
     }
 
-    label{
+    label {
         font-weight: 400;
         line-height: 25px;
         margin: 8px 0;
     }
 
-    .nextBtn{
+    .nextBtn {
         width: 100%;
     }
 
-
-     .pull-right-sm {
+    .pull-right-sm {
         float: none !important;
     }
 
-    #selectInfo{
+    #selectInfo {
         height: 45px;
         width: 100%;
         outline: none;
@@ -265,11 +279,11 @@
         margin: 10px 0;
     }
 
-    .prevBtn, .nextBtn, .startTestBtn{
+    .prevBtn, .nextBtn, .startTestBtn {
         margin: 18px 0;
     }
 
-    #faceQuestionsOption{
+    #faceQuestionsOption {
         padding: 0;
     }
 
@@ -280,7 +294,7 @@
 }
 
 @media screen and (max-width: 360px) {
-    #testTabs{
+    #testTabs {
         display: none;
     }
 }

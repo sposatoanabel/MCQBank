@@ -116,14 +116,84 @@
             <!-- / row -->
         </section>
         <section id="questionTimer">
-            <div class="container">
+            <div class="container lightBlueBox">
+                <div id="timeLeft">
+                    <img src="assets/imgs/clock.svg" alt=""> TOTAL TIME LEFT <span>2 min 55 sec</span>
+                </div><!-- / timeLeft-->
+                <hr>
+                <div id="timePerQuestion">
+                    <h3 class="text-center">Total time per question</h3>
+                    <p class="text-center">
+                        <span class="bgTimer" id="hours">01 hour</span>
+                        <span class="bgTimer" id="minutes">20 min</span>
+                        <span class="bgTimer" id="seconds">20 sec</span>
+                    </p>
 
+                    <p class="reminder">REMINDER SET AT 2 SECONDS</p>
+                </div><!-- / timePerQuestion -->
+                <div class="col-md-12 text-center" role="group">
+                    <button type="button" class="btn btn-success">Pause the exam</button>
+                    <button type="button" class="btn btn-success">Stop and return to Exam later</button>
+                    <button type="button" class="btn btn-success">Finish the exam</button>
+                </div>
+                <p>Question 1(3 stems) out of 327</p>
+                <p>Session Score = 0%</p>
             </div><!-- container -->
+
         </section>
 
         <section id="questionAndAnswers">
-            <div class="container">
+            <div class="container lightBlueBox">
+                <h3>Question</h3>
+                <p class="lead">For each patient below, choose the most likely joint disorder.
+                    Select one option from the list. Each option may be selected once, more than once or not at all.
+                </p>
+                <ol type="a">
+                    <li>Gout</li>
+                    <li>seudogout</li>
+                    <li>Specific arthritis</li>
+                    <li>Tuberculous arthritis</li>
+                    <li>Reiter’s syndrome</li>
+                    <li>Psoriatic arthritis</li>
+                    <li>Ankylosinh spondylitis</li>
+                    <li>Rheumatoid arthritis</li>
+                </ol>
+            </div><!-- container -->
+        </section>
 
+        <section id="feedback">
+            <div class="container lightBlueBox">
+                <h3>Feedback</h3>
+                <ol>
+                    <li class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat
+                            </p>
+                        </div><!-- / col-->
+                        <div class="col-sm-6 col-xs-12">
+                            <label for="optionsQuestion1"></label>
+                            <select name="answers" id="optionsQuestion1">
+                                <option>Lorem ipsum dolor sit amet</option>
+                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                <option>Lorem ipsum dolor sit amet</option>
+                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                <option>Lorem ipsum dolor sit amet</option>
+                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                <option>Lorem ipsum dolor sit amet</option>
+                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                            </select>
+                        </div><!-- / col-->
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ol>
             </div><!-- container -->
         </section>
 
