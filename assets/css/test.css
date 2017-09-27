@@ -115,7 +115,9 @@
 }
 
 .nextBtn, .prevBtn, .startTestBtn {
-    width: 20%;
+    width: 17%;
+    display: inline-block;
+    margin-right: 2%;
 }
 
 .show-hide {
@@ -343,6 +345,11 @@ h4.panel-title {
     #answers, #questionAndAnswers {
         display: block;
     }
+
+    .nextBtn, .prevBtn, .startTestBtn {
+        width: auto;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -360,12 +367,13 @@ h4.panel-title {
     }
 
     #questionTimer .btn {
-        display: inline-block;
+        display: block;
         width: auto;
+        margin: 10px auto;
     }
 
     .nextQuestion {
-        width: 20% !important;
+        width: 40% !important;
         margin: 0 auto;
         display: block;
     }
@@ -374,10 +382,31 @@ h4.panel-title {
         width: 100%;
     }
 
+
+
+    .nextBtn, .prevBtn, .startTestBtn {
+        width: auto;
+    }
+
+
+
+
     /* width: 100%; */
 }
 
 @media (max-width: 460px) {
+
+    .nextBtn, .prevBtn, .startTestBtn {
+        width: 100%;
+    }
+
+    .fa-stack-1x, .fa-stack-2x{
+        text-align: right;
+    }
+
+    .alignIconRight {
+        float: right;
+    }
 
     #accordionTest {
         display: block;
@@ -465,17 +494,29 @@ h4.panel-title {
 and (min-device-width: 320px)
 and (max-device-width: 480px) {
 
+    /* icons plus and minus */
+
+    .nextBtn, .prevBtn, .startTestBtn {
+        width: 100%;
+    }
+
+    .fa-stack-1x, .fa-stack-2x{
+        text-align: right;
+    }
+
+    .alignIconRight {
+        float: right;
+    }
+
     #headingOne a,
     #headingTwo a,
     #headingThree a{
         float: right;
     }
-    .nextBtn, .prevBtn, .startTestBtn {
-        width: 100%;
-    }
 
     #accordionTest {
         display: block;
+        margin: 20px auto;
     }
 
     #questionAndAnswers, #answers {

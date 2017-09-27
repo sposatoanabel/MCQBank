@@ -115,8 +115,8 @@
             </div>
             <!-- / row -->
         </section>
-        <section>
-            <div id="testTabs" class="container">
+        <section class="container">
+            <div id="testTabs" >
                 <ul class="nav nav-pills nav-tabs">
                     <li class="active"><a data-toggle="tab" href="#nav-test-mode">Test Mode</a></li>
                     <li><a data-toggle="tab" href="#nav-question-mode">Question Mode</a></li>
@@ -360,12 +360,14 @@
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingOne">
-                                    <h4 class="panel-title">
+                                    <h4 class="panel-title">Test Mode </h4>
                                         <a role="button" data-toggle="collapse" data-parent="#accordion"
                                            href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            Test Mode <i class="show-hide fa fa-plus-circle"></i>
+                                            <div class="alignIconRight">
+                                            <i class="fa fa-circle-o fa-stack-2x overlap overlapCircle"></i>
+                                            <i class="show-hide fa fa-plus overlap overlapIcons"></i>
+                                        </div>
                                         </a>
-                                    </h4>
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
                                      aria-labelledby="headingOne">
@@ -431,13 +433,15 @@
                             </div><!-- / panel-->
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingTwo">
-                                    <h4 class="panel-title">
+                                    <h4 class="panel-title">Question Mode</h4>
                                         <a class="collapsed" role="button" data-toggle="collapse"
                                            data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
                                            aria-controls="collapseTwo">
-                                            Question Mode<i class="show-hide fa fa-plus-circle"></i>
+                                            <div class="alignIconRight">
+                                                <i class="fa fa-circle-o fa-stack-2x overlap overlapCircle"></i>
+                                                <i class="show-hide fa fa-plus overlap overlapIcons"></i>
+                                            </div>
                                         </a>
-                                    </h4>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
                                      aria-labelledby="headingTwo">
