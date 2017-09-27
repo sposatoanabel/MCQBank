@@ -55,7 +55,7 @@
                 $(e.target)
                     .prev('.panel-heading')
                     .find('.show-hide')
-                    .toggleClass('fa-plus-circle fa-minus-circle'); // find 'show-hide' class element and swap the icon every time someone clicks
+                    .toggleClass('fa-plus fa-minus'); // find 'show-hide' class element and swap the icon every time someone clicks
             }
 
             $('.panel-group').on('hidden.bs.collapse', toggleAccordionIcon);
@@ -64,13 +64,12 @@
         }, // toggleAccordionIcon
 
 
-
-
         addActiveStateToTheAccordion = function () {
 
-            $('#accordion .panel').on( "click", function() {
+            $('#accordion .panel').on("click", function () {
                 $(this).siblings().find(".panel-heading").removeClass("panel-heading-active");
                 $(this).find(".panel-heading").toggleClass("panel-heading-active");
+
             });
         },
 
