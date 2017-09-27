@@ -148,15 +148,25 @@
 
 ===============================================*/
 
+.breadcrumb-item > a{
+    color: #ffffff;
+}
+
+.breadcrumb>.active{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
 #timePerQuestion h3 {
     margin: 50px 0;
 }
 
 .lightBlueBox {
-    margin: 60px auto;
+    margin: 17px auto;
     border: 1px solid #add8e6;
     border-radius: 4px;
-    padding: 50px;
+    padding: 25px;
 }
 
 #timeLeft {
@@ -174,8 +184,11 @@
     border-radius: 6px;
 }
 
-#questionAndAnswers ol {
+ ol.questionAndAnswers {
     list-style: upper-alpha;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 20px;
 }
 
 #questionAndAnswers .lead, .score, #timeLeft {
@@ -268,6 +281,25 @@ h4.panel-title {
     float: right;
 }
 
+#answers select,
+#questionAndAnswers select {
+    background: white;
+    border: 1px solid #D2E3E2;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+
+.linkFavQuestion {
+    color: #141414;
+    text-decoration: none;
+    margin-top: 16px;
+    padding-left: 0px;
+    cursor: pointer;
+    text-align: left;
+    display: block;
+}
+
 /*----------------------------------------------------------
 
                    Media queries
@@ -322,13 +354,30 @@ h4.panel-title {
     }
 
     #answers, #questionAndAnswers {
-        display: none;
-    }
-
-    #questionAndAnswersMobile {
         display: block;
     }
 
+    #questionAndAnswersMobile {
+        display: none;
+    }
+
+    #questionTimer .btn{
+        display: inline-block;
+        width: auto;
+    }
+
+    .nextQuestion {
+        width: 20% !important;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #answers select, #questionAndAnswers select{
+        width: 100%;
+    }
+
+
+    /* width: 100%; */
 }
 
 @media (max-width: 460px) {
@@ -357,6 +406,8 @@ h4.panel-title {
         margin-bottom: 4px;
         margin-top: 8px;
     }
+
+
 
     .panel-group {
         margin-bottom: 20px;
@@ -409,43 +460,23 @@ h4.panel-title {
         margin-top: 0;
     }
 
-}
-
-
-
-
-
-
-@media screen and (max-width: 360px) {
-    #testTabs {
-        display: none;
-    }
-
-    #questionAndAnswersMobile {
-        display: block;
-    }
-
-
-
-
-
-
-    
-
 
 }
-
-
-
 
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 480px) {
-
+#questionAndAnswers, #answers{
+    display: none;
+}
+    #questionAndAnswersMobile{
+        display: block;
+    }
 
     .nextQuestion {
-        width: 90%;
+        width: 90% !important;
         margin: 0 auto;
+        display: block;
     }
 
     #questionTimer .col-md-12 {
@@ -453,11 +484,13 @@ and (max-device-width: 480px) {
         padding-left: 0;
     }
 
-    #answers select, #questionAndAnswersMobile select {
+    #answers select,
+    #questionAndAnswersMobile select {
         background: white;
         border: 1px solid #D2E3E2;
         padding: 8px;
         margin: 0 auto;
+        width: 100%;
     }
 
     #answersMobile ol{
@@ -494,7 +527,8 @@ and (max-device-width: 480px) {
         cursor: pointer;
     }
 
-    #answers select, #questionAndAnswersMobile select {
+    #answers select,
+    #questionAndAnswersMobile select {
         background: white;
         border: 1px solid #D2E3E2;
         padding: 8px;
@@ -549,8 +583,6 @@ and (max-device-width: 480px) {
         margin-bottom: 10px;
     }
 
-
-
     .numberofQuestions {
         margin-top: 40px;
     }
@@ -568,7 +600,6 @@ and (max-device-width: 480px) {
         margin-bottom: 14px;
         margin-top: 0;
     }
-
 
 }
 
