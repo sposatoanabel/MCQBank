@@ -363,7 +363,7 @@
                                     <h4 class="panel-title">
                                         <a role="button" data-toggle="collapse" data-parent="#accordion"
                                            href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            Collapsible Group Item #1 <i class="show-hide fa fa-plus-circle"></i>
+                                            Test Mode <i class="show-hide fa fa-plus-circle"></i>
                                         </a>
                                     </h4>
                                 </div>
@@ -374,21 +374,24 @@
                                             <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                                 <div class="form-check">
                                                     <label class="form-check-label">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked>
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                               value="option1" checked>
                                                         Timed Exam Session
                                                     </label>
                                                 </div><!-- / form-check-->
 
                                                 <div class="form-check">
                                                     <label class="form-check-label">
-                                                        <input class="form-check-input" type="radio" name="gridRadios" value="option2">
+                                                        <input class="form-check-input" type="radio" name="gridRadios"
+                                                               value="option2">
                                                         Non - Timed Revision Sessions
                                                     </label>
                                                 </div>
                                             </div>
                                             <hr>
                                             <div class="form-group row col-lg-12 col-md-12 col-sm-12">
-                                                <label for="totalQuestions" class="col-sm-3 col-form-label">How many questions?</label>
+                                                <label for="totalQuestions" class="col-sm-3 col-form-label">How many
+                                                    questions?</label>
                                                 <div class="col-sm-5">
                                                     <input type="number" class="form-control totalQuestions">
                                                 </div>
@@ -418,15 +421,13 @@
                                                         <span class="custom-control-indicator"></span>
                                                         <span class="custom-control-description">MCQ Bank format</span>
                                                     </label>
-
                                                 </div>
-
                                             </div>
                                             <button type="button" class="btn btn-success btn-lg nextButton">Next
                                             </button>
                                         </form>
-                                    </div>
-                                </div>
+                                    </div><!-- / panel-body -->
+                                </div><!-- collapseOne-->
                             </div><!-- / panel-->
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingTwo">
@@ -434,7 +435,7 @@
                                         <a class="collapsed" role="button" data-toggle="collapse"
                                            data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
                                            aria-controls="collapseTwo">
-                                            Collapsible Group Item #2 <i class="show-hide fa fa-plus-circle"></i>
+                                            Question Mode<i class="show-hide fa fa-plus-circle"></i>
                                         </a>
                                     </h4>
                                 </div>
@@ -457,7 +458,7 @@
                                                         <span class="custom-control-description">Clinical Knowledge (CKT)</span>
                                                     </label>
                                                 </div>
-                                            </div>
+                                            </div><!-- /form-group-->
                                             <h4>Question type</h4>
                                             <hr>
                                             <div class="form-group row col-lg-12 col-md-12 col-sm-12">
@@ -468,17 +469,16 @@
                                                         <span class="custom-control-indicator"></span>
                                                         <span class="custom-control-description">Multiple Best Answer (MBA)</span>
                                                     </label>
-                                                </div>
+                                                </div><!-- form check-->
                                                 <div class="form-check">
                                                     <label class="custom-control custom-radio">
-
                                                         <input name="checkbox" type="checkbox"
                                                                class="custom-control-input">
                                                         <span class="custom-control-indicator"></span>
                                                         <span class="custom-control-description">Ranking</span>
                                                     </label>
-                                                </div>
-                                            </div>
+                                                </div><!-- form check-->
+                                            </div><!-- / form-group-->
 
 
                                             <div class="form-group row">
@@ -500,7 +500,7 @@
                                                     <div class="form-check">
                                                         <label class="form-check-label">
                                                             <input class="form-check-input" type="checkbox">
-                                                       cardiovascular
+                                                            cardiovascular
                                                         </label>
                                                         <label class="form-check-label">
                                                             <input class="form-check-input" type="checkbox"> Dermatology
@@ -569,12 +569,15 @@
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingThree">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse"
-                                           data-parent="#accordion" href="#collapseThree">
-                                            Collapsible Group Item #3 <i class="show-hide fa fa-plus-circle"></i>
-                                        </a>
-                                    </h4>
+                                    <h4 class="panel-title">Additional Options</h4>
+                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                       data-parent="#accordion" href="#collapseThree">
+
+                                        <div class="alignIconRight">
+                                            <i class="fa fa-circle-o fa-stack-2x overlap overlapCircle"></i>
+                                            <i class="show-hide fa fa-plus overlap overlapIcons"></i>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
                                      aria-labelledby="headingThree">
@@ -652,9 +655,9 @@
                                                 Test!
                                             </button>
                                         </form>
-                                    </div>
-                                </div>
-                            </div>
+                                    </div><!-- / body panel-->
+                                </div><!--/ collapseThree-->
+                            </div><!-- /panel-->
                         </div>
                     </div>
                 </div>
@@ -689,9 +692,9 @@
                     </ul>
                 </div>
             </div><!--/legal-->
-        </div>
+        </div><!-- / footerDiv-->
     </footer>
-</div>
+</div><!-- / wrapper-->
 
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
