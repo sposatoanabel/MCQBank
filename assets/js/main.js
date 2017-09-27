@@ -71,6 +71,13 @@
                 $(this).find(".panel-heading").toggleClass("panel-heading-active");
 
             });
+
+            $('#questionAndAnswersMobile .panel').on("click", function () {
+                $(this).siblings().find(".panel-heading").removeClass("panel-heading-active");
+                $(this).find(".panel-heading").toggleClass("panel-heading-active");
+
+            });
+
         },
 
 

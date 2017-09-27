@@ -115,10 +115,10 @@
             </div>
             <!-- / row -->
         </section>
-        <section id="questionTimer">
-            <div class="container lightBlueBox">
+        <section id="questionTimer" class="container">
+            <div class=" lightBlueBox">
                 <div id="timeLeft">
-                    <img src="assets/imgs/clock.svg" alt=""> TOTAL TIME LEFT <span>2 min 55 sec</span>
+                    <img width="30" height="30" src="assets/imgs/clock.svg" alt=""> TOTAL TIME LEFT <span>2 min 55 sec</span>
                 </div><!-- / timeLeft-->
                 <hr>
                 <div id="timePerQuestion">
@@ -132,18 +132,18 @@
                     <p class="reminder">REMINDER SET AT 2 SECONDS</p>
                 </div><!-- / timePerQuestion -->
                 <div class="col-md-12 text-center" role="group">
-                    <button type="button" class="btn btn-success">Pause the exam</button>
-                    <button type="button" class="btn btn-success">Stop and return to Exam later</button>
-                    <button type="button" class="btn btn-success">Finish the exam</button>
+                    <button type="button" class="btn btn-success btn-lg">Pause the exam</button>
+                    <button type="button" class="btn btn-success btn-lg">Stop and return to Exam later</button>
+                    <button type="button" class="btn btn-success btn-lg">Finish the exam</button>
                 </div>
-                <p>Question 1(3 stems) out of 327</p>
-                <p>Session Score = 0%</p>
+                <p class="numberofQuestions">Question 1(3 stems) out of 327</p>
+                <p class="score">Session Score = 0%</p>
             </div><!-- container -->
 
         </section>
 
-        <section id="questionAndAnswers">
-            <div class="container lightBlueBox">
+        <section id="questionAndAnswers" class="container">
+            <div class=" lightBlueBox">
                 <h3>Question</h3>
                 <p class="lead">For each patient below, choose the most likely joint disorder.
                     Select one option from the list. Each option may be selected once, more than once or not at all.
@@ -246,8 +246,144 @@
                 <a href="#">Make this as favourite question</a>
             </div><!-- container -->
         </section>
-        <section>
-            <div class="container lightBlueBox">
+
+<!-- question timer Mobile -->
+        <section id="questionAndAnswersMobile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel-group" id="accordionQuestionsMobile" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="feedback">
+                                    <h4 class="panel-title">Questions</h4>
+                                    <a role="button" data-toggle="collapse" data-parent="#accordionQuestionsMobile"
+                                       href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+                                        <div class="alignIconRight">
+                                            <i class="fa fa-circle-o fa-stack-2x overlap overlapCircle"></i>
+                                            <i class="show-hide fa fa-plus overlap overlapIcons"></i>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                     aria-labelledby="feedback">
+                                    <div class="panel-body">
+                                        <section id="questionMobile">
+                                            <div class="container lightBlueBox">
+                                                <p class="lead">For each patient below, choose the most likely joint disorder.
+                                                    Select one option from the list. Each option may be selected once, more than once or not at all.
+                                                </p>
+                                                <ol type="a">
+                                                    <li>Gout</li>
+                                                    <li>seudogout</li>
+                                                    <li>Specific arthritis</li>
+                                                    <li>Tuberculous arthritis</li>
+                                                    <li>Reiter’s syndrome</li>
+                                                    <li>Psoriatic arthritis</li>
+                                                    <li>Ankylosinh spondylitis</li>
+                                                    <li>Rheumatoid arthritis</li>
+                                                </ol>
+                                            </div><!-- container -->
+                                        </section>
+
+                                        <section id="answersMobile">
+                                            <div class="container lightBlueBox">
+                                                <ol>
+                                                    <li class="row">
+                                                        <div class="col-sm-6 col-xs-12">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                                ut labore et dolore magna aliqua.
+                                                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                                commodo consequat
+                                                            </p>
+                                                        </div><!-- / col-->
+                                                        <div class="col-sm-6 col-xs-12">
+                                                            <label for="optionsQuestion1Mobile"></label>
+                                                            <select name="answers" id="optionsQuestion1Mobile">
+                                                                <option>Lorem ipsum dolor sit amet</option>
+                                                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                                                <option>Lorem ipsum dolor sit amet</option>
+                                                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                                                <option>Lorem ipsum dolor sit amet</option>
+                                                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                                                <option>Lorem ipsum dolor sit amet</option>
+                                                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                                            </select>
+                                                        </div><!-- / col-->
+                                                    </li>
+                                                    <li class="row">
+                                                        <div class="col-sm-6 col-xs-12">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                                ut labore et dolore magna aliqua.
+                                                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                                commodo consequat
+                                                            </p>
+                                                        </div><!-- / col-->
+                                                        <div class="col-sm-6 col-xs-12">
+                                                            <label for="optionsQuestion2Mobile"></label>
+                                                            <select name="answers" id="optionsQuestion2Mobile">
+                                                                <option>Lorem ipsum dolor sit amet</option>
+                                                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                                                <option>Lorem ipsum dolor sit amet</option>
+                                                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                                                <option>Lorem ipsum dolor sit amet</option>
+                                                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                                                <option>Lorem ipsum dolor sit amet</option>
+                                                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                                            </select>
+                                                        </div><!-- / col-->
+                                                    </li>
+                                                    <li class="row">
+                                                        <div class="col-sm-6 col-xs-12">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                                ut labore et dolore magna aliqua.
+                                                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                                commodo consequat
+                                                            </p>
+                                                        </div><!-- / col-->
+                                                        <div class="col-sm-6 col-xs-12">
+                                                            <label for="optionsQuestion3Mobile"></label>
+                                                            <select name="answers" id="optionsQuestion3Mobile">
+                                                                <option>Lorem ipsum dolor sit amet</option>
+                                                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                                                <option>Lorem ipsum dolor sit amet</option>
+                                                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                                                <option>Lorem ipsum dolor sit amet</option>
+                                                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                                                <option>Lorem ipsum dolor sit amet</option>
+                                                                <p class="rightAnswer"><i class="fa fa-plus fa-2x"></i>Correct Answer</p>
+                                                                <p class="wrongAnswer"><i class="fa fa-times fa-2x"></i>Wrong Answer</p>
+                                                            </select>
+                                                        </div><!-- / col-->
+                                                    </li>
+                                                </ol>
+                                                <a class="linkFavQuestion" href="#">Make this as favourite question</a>
+                                            </div><!-- container -->
+                                        </section>
+
+
+                                    </div><!-- / panel-body-->
+                                </div>
+                            </div><!-- / panel-->
+                        </div><!-- / container -->
+                    </div><!-- / col-log-12-->
+                </div><!-- / row-->
+            </div><!-- / container-->
+        </section>
+        <section id="feedbackSection">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -284,8 +420,10 @@
                 </div><!-- / row-->
             </div><!-- / container-->
         </section>
+
+
         <div class="row text-center">
-            <button type="button" class="btn btn-success btn-lg nextButton">Next Question
+            <button type="button" class="btn btn-success btn-lg nextQuestion">Next Question
             </button>
         </div><!-- / container -->
     </main>

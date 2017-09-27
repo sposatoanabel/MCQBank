@@ -124,7 +124,7 @@
 
 .panel-default > .panel-heading {
     color: #fff;
-    background-color: #30B2C8;
+    background-color: #ffffff;
     border-color: #D2E3E2;
     text-decoration: none;
 
@@ -174,78 +174,99 @@
     border-radius: 6px;
 }
 
-#questionAndAnswers ol{
+#questionAndAnswers ol {
     list-style: upper-alpha;
 }
 
-#questionAndAnswers .lead{
+#questionAndAnswers .lead, .score, #timeLeft {
     color: #1eb8d7;
     font-weight: 400
 }
 
-
-.rightAnswer{
+.rightAnswer {
     color: #00a379;
     font-size: 10px;
 }
 
-.wrongAnswer{
+.wrongAnswer {
     color: #e1859a;
     font-size: 10px;
 }
-h4.panel-title{
+
+h4.panel-title {
     font-size: 21px;
     display: inline-block;
 }
 
-.panel-title{
+.reminder {
+    text-transform: uppercase;
+}
+
+.numberofQuestions, .score, .reminder, #timeLeft {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1rem;
+
+}
+
+#feedbackSection .container {
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+.numberofQuestions {
+    margin-top: 80px;
+}
+
+#timePerQuestion p {
+    line-height: 3rem;
+}
+
+.panel-title {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
-    color: #322f2f;
+    color: #1eb8d7;
     font-weight: 400;
 }
 
-.panel-default > .panel-heading{
+.panel-default > .panel-heading {
 
-    background-color: #30B2C8;
+    background-color: #ffffff;
     border-color: #D2E3E2;
     text-decoration: none;
     padding: 20px;
 }
 
-
 .alignIconRight {
     position: relative;
 }
 
-
-.overlapCircle{
+.overlapCircle {
     z-index: 200;
     color: #D2E3E2;
 }
 
-.overlapIcons{
+.overlapIcons {
     z-index: 300;
     text-align: center;
     padding: 7px;
 }
 
-.fa-minus{
+.fa-minus {
     color: #30B2C8;
 
 }
-.fa-plus{
-    color: #ffffff;
+
+.fa-plus {
+    color: #1eb8d7;
 
 }
 
-#feedback a{
+#feedback a {
     float: right;
 }
-
-
-
 
 /*----------------------------------------------------------
 
@@ -257,12 +278,24 @@ h4.panel-title{
     #accordionTest {
         display: none;
     }
+
+    #questionAndAnswersMobile {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1199px) {
 
     #accordionTest {
         display: none;
+    }
+
+    #questionAndAnswersMobile {
+        display: none;
+    }
+
+    #answers, #questionAndAnswers {
+        display: block;
     }
 
 }
@@ -272,11 +305,27 @@ h4.panel-title{
     #accordionTest {
         display: none;
     }
+
+    #questionAndAnswersMobile {
+        display: none;
+    }
+
+    #answers, #questionAndAnswers {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 767px) {
 
     #accordionTest {
+        display: block;
+    }
+
+    #answers, #questionAndAnswers {
+        display: none;
+    }
+
+    #questionAndAnswersMobile {
         display: block;
     }
 
@@ -298,7 +347,7 @@ h4.panel-title{
     #largeBanner h1 {
         text-align: center;
         padding: 5px;
-        font-size: 45px;
+        font-size: 35px;
         margin-top: 8px;
         margin-bottom: 10px;
     }
@@ -350,13 +399,177 @@ h4.panel-title{
         padding: 0;
     }
 
+    #questionAndAnswersMobile {
+        display: block;
+    }
+
+
+    .panel-group {
+        margin-bottom: 14px;
+        margin-top: 0;
+    }
+
 }
+
+
+
+
+
 
 @media screen and (max-width: 360px) {
     #testTabs {
         display: none;
     }
+
+    #questionAndAnswersMobile {
+        display: block;
+    }
+
+
+
+
+
+
+    
+
+
 }
 
+
+
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+
+
+    .nextQuestion {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #questionTimer .col-md-12 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #answers select, #questionAndAnswersMobile select {
+        background: white;
+        border: 1px solid #D2E3E2;
+        padding: 8px;
+        margin: 0 auto;
+    }
+
+    #answersMobile ol{
+        padding-left: 0;
+    }
+
+    #answersMobile .lightBlueBox{
+        border: 0;
+    }
+
+    .linkFavQuestion{
+        color: #141414;
+        text-decoration: none;
+        margin-top: 16px;
+        padding-left: 14px;
+        cursor: pointer;
+    }
+
+    #questionMobile .lead{
+        color: #30B2C8;
+        font-weight: 400;
+    }
+
+    #questionMobile .lead{
+        color: #30B2C8;
+        font-weight: 400;
+    }
+
+    .linkFavQuestion{
+        color: #141414;
+        text-decoration: none;
+        margin-top: 16px;
+        padding-left: 14px;
+        cursor: pointer;
+    }
+
+    #answers select, #questionAndAnswersMobile select {
+        background: white;
+        border: 1px solid #D2E3E2;
+        padding: 8px;
+        margin: 0 auto;
+    }
+
+    #answersMobile ol{
+        padding-left: 0;
+    }
+
+    #answersMobile .lightBlueBox{
+        border: 0;
+    }
+
+    .lightBlueBox {
+        padding: 25px;
+        margin: 15px auto;
+    }
+
+    .nextQuestion {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #questionTimer .col-md-12 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #timeLeft img {
+        display: none;
+    }
+
+    #timePerQuestion h3 {
+        margin: 38px 0;
+        font-size: 18px;
+    }
+
+    .bgTimer {
+        padding: 20px 7px;
+        font-size: 0.9rem;
+        height: 122px;
+        margin-left: 0;
+    }
+
+    #questionTimer.container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #questionTimer .btn {
+        margin-bottom: 10px;
+    }
+
+
+
+    .numberofQuestions {
+        margin-top: 40px;
+    }
+
+    #questionAndAnswers .panel-group {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    h4.panel-title {
+        font-size: 19px;
+    }
+
+    .panel-group {
+        margin-bottom: 14px;
+        margin-top: 0;
+    }
+
+
+}
 
 
