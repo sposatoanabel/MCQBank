@@ -929,7 +929,7 @@ footer {
         margin-left: 0;
     }
 
-    .container {
+    #bottomMain.container {
         padding: 0;
     }
 
