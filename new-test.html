@@ -129,7 +129,7 @@
                             <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                        <input class="form-check-input" type="radio" name="timer" id="timer01"
                                                value="option1" checked>
                                         Timed Exam Session
                                     </label>
@@ -137,7 +137,7 @@
 
                                 <div class="form-check ">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                        <input class="form-check-input" type="radio" name="timer" id="timer02"
                                                value="option2">
                                         Non - Timed Revision Sessions
                                     </label>
@@ -192,8 +192,8 @@
                                     </label>
                                 </div>
                                 <div class="col-sm-6">
-                                    <label class="custom-control custom-radio">
-                                        <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                    <label class="custom-control custom-radio" for="clinicalKnowledge">
+                                        <input id="clinicalKnowledge" name="radio" type="radio" class="custom-control-input">
                                         <span class="custom-control-description">Clinical Knowledge (CKT)</span>
                                     </label>
                                 </div>
@@ -202,23 +202,20 @@
                             <hr>
                             <div class="form-group row col-lg-12 col-md-12 col-sm-12">
                                 <div class="form-check">
-                                    <label class="custom-control custom-radio">
-                                        <input name="checkbox" type="checkbox" class="custom-control-input" checked>
+                                    <label for="multipleAnswers" class="custom-control custom-radio">
+                                        <input id="multipleAnswers" name="checkbox" type="checkbox" class="custom-control-input" checked>
                                         <span class="custom-control-indicator"></span>
                                         <span class="custom-control-description">Multiple Best Answer (MBA)</span>
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <label class="custom-control custom-radio">
-
-                                        <input name="checkbox" type="checkbox" class="custom-control-input">
+                                    <label for="ranking" class="custom-control custom-radio">
+                                        <input id="ranking" name="checkbox" type="checkbox" class="custom-control-input">
                                         <span class="custom-control-indicator"></span>
                                         <span class="custom-control-description">Ranking</span>
                                     </label>
                                 </div>
                             </div>
-
-
                             <div class="form-group row">
                                 <div class="col-sm-8">
                                     <label class="mr-sm-2" for="inlineFormCustomSelectPref">Topics</label>
@@ -292,27 +289,26 @@
                             <div class="form-group col-md-12">
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="gridRadios"
-                                               value="option1" checked>
+                                        <input class="form-check-input" type="radio" name="gridRadios" value="option1" checked>
                                         Face all questions
                                     </label>
                                 </div><!-- / form-check-->
 
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="gridRadios" value="option1">
+                                        <input class="form-check-input" type="radio" name="gridRadios" value="option2">
                                         Face questions that I have not seen before
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="gridRadios" value="option2">
+                                        <input class="form-check-input" type="radio" name="gridRadios" value="option3">
                                         Face questions that I got wrong last time
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="radio" name="gridRadios" value="option3">
+                                        <input class="form-check-input" type="radio" name="gridRadios" value="option4">
                                         Face questions that I got wrong last time or have not seen before
                                     </label>
                                 </div>
@@ -399,9 +395,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group row col-lg-12 col-md-12 col-sm-12">
-                                                <label for="totalTimePerTest" class="col-sm-3 col-form-label">Total time
-                                                    per test
-                                                    (min)?</label>
+                                                <label for="totalTimePerTest" class="col-sm-3 col-form-label">Total time per test (min)?</label>
                                                 <div class="col-sm-5">
                                                     <input type="number" class="form-control totalTimePerTest">
                                                 </div>
@@ -410,15 +404,15 @@
                                             <div class="form-group row col-lg-12 col-md-12 col-sm-12">
                                                 <div class="col-sm-3">
                                                     <label class="custom-control custom-radio">
-                                                        <input id="radioPersonFormat" name="radio" type="radio"
+                                                        <input id="rpersonFormat" name="format" type="radio"
                                                                class="custom-control-input">
                                                         <span class="custom-control-indicator"></span>
                                                         <span class="custom-control-description">Person VUE format</span>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-5">
-                                                    <label class="custom-control custom-radio" id="mcqFormat">
-                                                        <input id="radioMcqFormat" name="radio" type="radio"
+                                                    <label class="custom-control custom-radio" id="formatMcq">
+                                                        <input id="rMcqFormat" name="format" type="radio"
                                                                class="custom-control-input">
                                                         <span class="custom-control-indicator"></span>
                                                         <span class="custom-control-description">MCQ Bank format</span>
@@ -449,15 +443,15 @@
                                         <form>
                                             <div class="form-group row">
                                                 <div class="col-sm-6">
-                                                    <label class="custom-control custom-radio pull-right-sm">
-                                                        <input id="radio" name="radio" type="radio"
+                                                    <label id="situational" class="custom-control custom-radio pull-right-sm">
+                                                        <input id="situational" name="typeOfTest" type="radio"
                                                                class="custom-control-input">
                                                         <span class="custom-control-description">Situational Judgement Test (SJT)</span>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <label class="custom-control custom-radio">
-                                                        <input id="radio2" name="radio" type="radio"
+                                                        <input id="radio2" name="typeOfTest" type="radio"
                                                                class="custom-control-input">
                                                         <span class="custom-control-description">Clinical Knowledge (CKT)</span>
                                                     </label>
@@ -499,7 +493,7 @@
                                                 </div>
                                             </div><!-- form-group -->
                                             <hr>
-                                            <div class="form-group row" id="topics">
+                                            <div class="form-group row" id="conditionList">
                                                 <div class="col-sm-5">
                                                     <div class="form-check">
                                                         <label class="form-check-label">
@@ -563,10 +557,8 @@
                                                     </div>
                                                 </div><!-- / col-->
                                             </div><!-- / form-group row -->
-                                            <button type="button" class="btn btn-success btn-lg prevBtn">< Preview
-                                            </button>
-                                            <button type="button" class="btn btn-success btn-lg nextBtn">Next >
-                                            </button>
+                                            <button type="button" class="btn btn-success btn-lg prevBtn">< Preview</button>
+                                            <button type="button" class="btn btn-success btn-lg nextBtn">Next ></button>
                                         </form>
                                     </div>
                                 </div>
