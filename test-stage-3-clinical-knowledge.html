@@ -5,8 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
+    <title>Mcq Bank</title>
     <!-- bootstrap code css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <!-- offcanvas-->
@@ -118,9 +117,8 @@
 
         <section id="questionTimer" class="container">
             <div class=" lightBlueBox">
-
                 <div id="timeLeft">
-                    <img width="30" height="30" src="assets/imgs/clock.svg" alt=""> TOTAL TIME LEFT
+                    <img width="30" height="30" src="assets/imgs/clock.svg" alt="timer"> TOTAL TIME LEFT
                     <span>2 min 55 sec</span>
                 </div><!-- / timeLeft-->
                 <hr>
@@ -142,7 +140,6 @@
                 <p class="numberofQuestions">Question 1(3 stems) out of 327</p>
                 <p class="score">Session Score = 0%</p>
             </div><!-- container -->
-
         </section>
         <section id="questionType" class="container">
             <div class=" lightBlueBox">
@@ -165,42 +162,45 @@
                 </div>
             </div><!-- container -->
         </section>
-        <section id="feedbackSection" class="container">
-                <div class="row">
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="feedback">
-                                    <h4 class="panel-title">Feedback</h4>
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 
-                                        <div class="alignIconRight">
-                                            <i class="fa fa-circle-o fa-stack-2x overlap overlapCircle"></i>
-                                            <i class="show-hide fa fa-plus overlap overlapIcons"></i>
-                                        </div>
-                                    </a>
-                                </div><!-- panel heading==-->
-                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
-                                     aria-labelledby="feedback">
-                                    <div class="panel-body">
-                                        <p>Correct responses: C, F, G.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua.
-                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat.
-                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                            eu fugiat nulla pariatur.
-                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                            deserunt mollit anim id est laborum.</p>
-                                    </div><!-- / panel-body-->
+        <!-- FEEDBACK SECTION -->
+
+        <section id="feedbackSection" class="container">
+            <div class="row">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="feedback">
+                            <h4 class="panel-title">Feedback</h4>
+                            <a role="button" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+
+                                <div class="alignIconRight">
+                                    <i class="fa fa-circle-o fa-stack-2x overlap overlapCircle"></i>
+                                    <i class="show-hide fa fa-plus overlap overlapIcons"></i>
                                 </div>
-                            </div><!-- / panel-->
-                        </div><!-- / row -->
+                            </a>
+                        </div><!-- panel heading==-->
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="feedback">
+                            <div class="panel-body">
+                                <p>Correct responses: C, F, G.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                    eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.</p>
+                            </div><!-- / panel-body-->
+                        </div>
+                    </div><!-- / panel-->
+                </div><!-- / row -->
                 <div class="row text-center">
-                <button type="button" class="btn btn-success btn-lg prevBtn">< Previous Question</button>
-                <button type="button" class="btn btn-success btn-lg finishTestBtn">Finish Test</button>
-                <button type="button" class="btn btn-success btn-lg nextBtn">Next Question ></button>
-            </div><!-- / col -->
+                    <button type="button" class="btn btn-success btn-lg prevBtn">< Previous Question</button>
+                    <button type="button" class="btn btn-success btn-lg finishTestBtn">Finish Test</button>
+                    <button type="button" class="btn btn-success btn-lg nextBtn">Next Question ></button>
+                </div><!-- / col -->
             </div><!-- / row-->
         </section>
 
@@ -208,7 +208,8 @@
     <footer>
         <div id="footerDiv" class="container">
             <div id="copyRight" class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                &copy; 2017 MCQBank <span id="copyrightSpan" class="hidden-xs">web design company DotPeak digital agency</span>
+                &copy; 2017 MCQBank <span id="copyrightSpan"
+                                          class="hidden-xs">web design company DotPeak digital agency</span>
             </div><!--/copyRight-->
             <div id="legal" class="hidden-xs hidden-sm hidden-md col-lg-6">
                 <span><a href="#">Terms & conditions</a></span>
